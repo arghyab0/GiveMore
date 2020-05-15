@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "202768922764",
+    "firebase_url": "https://covidist-04.firebaseio.com",
+    "project_id": "covidist-04",
+    "storage_bucket": "covidist-04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202768922764:android:ef9df1b1a4b9b51884a3a9",
+        "android_client_info": {
+          "package_name": "com.example.covidist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202768922764-5bchq8dpuu9jm8sq4ovpm91hsqh18ctl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT_-LvOobaz0NPFypgAAWTB6HcKUXT1Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202768922764-5bchq8dpuu9jm8sq4ovpm91hsqh18ctl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

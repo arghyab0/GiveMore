@@ -1,0 +1,253 @@
+import 'package:covidist/UI/Requests.dart';
+import 'package:covidist/UI/donationlisted.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import 'categories (1).dart';
+import 'new_donation.dart';
+
+enum SingingCharecter { pickup, courier }
+
+class PickUp extends StatefulWidget {
+  @override
+  _PickUpState createState() => _PickUpState();
+}
+
+class _PickUpState extends State<PickUp> {
+  SingingCharecter _charecter = SingingCharecter.pickup;
+  bool myself = false;
+  bool courier = false;
+  bool isSwitch = false;
+  String dropdownvalue = 'Ration Id';
+  List<DropdownMenuItem<String>> listDrop = [];
+  String selected = null;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios, color: Colors.black54),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        automaticallyImplyLeading: true,
+        backgroundColor: Color.fromRGBO(246, 245, 245, 1.0),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(
+              width: 75,
+            ),
+            Text(
+              'Checkout',
+              style: TextStyle(
+                color: Color.fromRGBO(45, 12, 87, 1),
+                fontFamily: 'poppins',
+              ),
+            ),
+          ],
+        ),
+      ),
+      backgroundColor: Color.fromRGBO(246, 245, 245, 1.0),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Pickup address',
+                    style: TextStyle(
+                        color: Color.fromRGBO(45, 12, 87, 1.0),
+                        fontFamily: 'poppins',
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  FlatButton(
+                    onPressed: () {},
+                    child: Text(
+                      'CHANGE',
+                      style: TextStyle(
+                        color: Color.fromRGBO(114, 3, 255, 1),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Icon(
+                    Icons.home,
+                    size: 35,
+                  ),
+                  SizedBox(
+                    width: 25,
+                  ),
+                  Text("Alexander Smith"),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Pickup options',
+                    style: TextStyle(
+                      color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'poppins',
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  FlatButton(
+                    onPressed: () {},
+                    child: Text(
+                      'CHANGE',
+                      style: TextStyle(
+                        color: Color.fromRGBO(114, 3, 255, 1),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Icon(
+                    Icons.directions_walk,
+                  ),
+                  Text(
+                    "I'll submit it up myself",
+                    style: TextStyle(
+                      fontFamily: 'poppins',
+                      fontSize: 20,
+                    ),
+                  ),
+                  Radio(
+                    value: SingingCharecter.pickup,
+                    groupValue: _charecter,
+                    activeColor: Color.fromRGBO(114, 3, 255, 1),
+                    onChanged: (SingingCharecter value) {
+                      setState(
+                        () {
+                          _charecter = value;
+                        },
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: <Widget>[
+                  SizedBox(
+                    width: 35,
+                  ),
+                  Icon(
+                    Icons.directions_bike,
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Text(
+                    "By Courier",
+                    style: TextStyle(
+                      fontFamily: 'poppins',
+                      fontSize: 20,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 135,
+                  ),
+                  Radio(
+                    value: SingingCharecter.courier,
+                    groupValue: _charecter,
+                    activeColor: Color.fromRGBO(114, 3, 255, 1),
+                    onChanged: (SingingCharecter value) {
+                      setState(
+                        () {
+                          _charecter = value;
+                        },
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 70,
+            ),
+            RaisedButton(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+                side: BorderSide(
+                  color: Color.fromRGBO(11, 206, 131, 1),
+                ),
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 130, vertical: 15),
+              focusElevation: 10,
+              color: Color.fromRGBO(11, 206, 131, 1),
+              child: Text(
+                'DONATE',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).pushNamed('/donationlisted');
+              },
+            ),
+            SizedBox(
+              height: 30,
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 1,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.add), title: Text("")),
+        ],
+        onTap: (int index) => moveto(index, context),
+        backgroundColor: Color.fromRGBO(246, 245, 245, 1),
+      ),
+    );
+  }
+}
+
+moveto(index, cont) {
+  if (index == 0) {
+    Navigator.push(cont, MaterialPageRoute(builder: (context) => categories()));
+  } else if (index == 2) {
+    Navigator.push(
+        cont, MaterialPageRoute(builder: (context) => NewDonation()));
+  }
+}

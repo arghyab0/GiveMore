@@ -1,0 +1,321 @@
+import 'package:covidist/UI/YourActivitydone.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
+
+class DetailsTwo extends StatefulWidget {
+  @override
+  _DetailsTwoState createState() => _DetailsTwoState();
+}
+
+class _DetailsTwoState extends State<DetailsTwo> {
+  bool pickup = false;
+  bool destination = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(246, 245, 245, 1.0),
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+        backgroundColor: Color.fromRGBO(246, 245, 245, 1.0),
+        leading: IconButton(
+          color: Colors.black54,
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                'Details',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  color: Color.fromRGBO(45, 12, 87, 1.0),
+                  fontFamily: 'poppins',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 30,
+                ),
+                SizedBox(
+                  height: 280,
+                  child: FAProgressBar(
+                    progressColor: Colors.purpleAccent,
+                    borderRadius: 8,
+                    size: 18,
+                    direction: Axis.vertical,
+                    verticalDirection: VerticalDirection.down,
+                    currentValue: 50,
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      'Your Location',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Color.fromRGBO(45, 12, 87, 1.0),
+                        fontFamily: 'poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                      ),
+                    ),
+                    Text(
+                      'Adress - 1',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontFamily: 'poppins',
+                        fontSize: 15,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'PickUp From',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Color.fromRGBO(45, 12, 87, 1.0),
+                                fontFamily: 'poppins',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),
+                            ),
+                            Text(
+                              'Address - 2',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontFamily: 'poppins',
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Destination',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Color.fromRGBO(45, 12, 87, 1.0),
+                                fontFamily: 'poppins',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),
+                            ),
+                            Text(
+                              'Address - 3',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontFamily: 'poppins',
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                )
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Contact Details',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontFamily: 'poppins',
+                            fontSize: 25,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Name',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontFamily: 'poppins',
+                            fontSize: 15,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          '1234567890',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontFamily: 'poppins',
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Container(
+                          height: 70,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(246, 245, 245, 1),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10.0)),
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                  'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1062&q=80',
+                                ),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        Text(
+                          'Boston Lettuce',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontFamily: 'poppins',
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    side: BorderSide(
+                      color: Color.fromRGBO(11, 206, 131, 1),
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                  focusElevation: 10,
+                  color: Color.fromRGBO(11, 206, 131, 1),
+                  child: Text(
+                    'ACCEPT',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/details1');
+                  },
+                ),
+                RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    side: BorderSide(
+                      color: Colors.red,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                  focusElevation: 10,
+                  color: Colors.red,
+                  child: Text(
+                    'CANCEL',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                    ),
+                  ),
+                  onPressed: () {},
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.person), title: Text("")),
+        ],
+        onTap: (int index) => moveto(index, context),
+        backgroundColor: Color.fromRGBO(246, 245, 245, 1),
+      ),
+    );
+  }
+}
+
+moveto(index, cont) {
+  if (index == 1) {
+    Navigator.push(
+        cont, MaterialPageRoute(builder: (context) => youractivitydone()));
+  } else if (index == 2) {
+    // Navigator.push(
+    //     cont, MaterialPageRoute(builder: (context) => NewDonation()));
+  }
+}
