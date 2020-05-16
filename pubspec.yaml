@@ -28,6 +28,7 @@ dependencies:
   provider: ^3.1.0
   flutter_animation_progress_bar: ^1.0.0
   circular_check_box: ^1.0.2
+  url_launcher: ^5.4.7
 
 
 dev_dependencies:
@@ -52,7 +53,8 @@ flutter:
    - assets/logo_short-01.png
    - assets/logo-01.png
    - assets/base.png
-   
+   - assets/boxLogo.png
+   - assets/bot.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

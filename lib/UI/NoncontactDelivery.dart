@@ -2,6 +2,8 @@ import 'package:covidist/UI/Requests.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/services.dart';
 
 import 'categories (1).dart';
 
@@ -14,12 +16,26 @@ class noncontactdelivery extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Stack(children: <Widget>[
-          Container(
-            child: new DecoratedBox(
-              decoration: new BoxDecoration(
-                image: new DecorationImage(
-                  image: new AssetImage("assets/base.png"),
-                  fit: BoxFit.fill,
+          Image.asset(
+            "assets/base.png",
+            fit: BoxFit.cover,
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 80),
+              child: Container(
+                height: 100,
+                width: 100,
+                child: FloatingActionButton(
+                  backgroundColor: Color(0xFF2D0C57),
+                  child: Image.asset(
+                    'assets/bot.png',
+                  ),
+                  onPressed: () => launch(
+                      'https://integrations.eu-gb.assistant.watson.cloud.ibm.com/web/public/8a91f772-2241-49c6-a3b0-8672318fbfb0'),
                 ),
               ),
             ),
@@ -27,7 +43,7 @@ class noncontactdelivery extends StatelessWidget {
           Column(
             children: <Widget>[
               SizedBox(
-                height: 260,
+                height: 280,
               ),
               Container(
                 alignment: Alignment.bottomCenter,
@@ -49,7 +65,12 @@ class noncontactdelivery extends StatelessWidget {
                       width: 80,
                       height: 80,
                       margin: EdgeInsets.only(top: 15),
-                      child: Image.asset('assets/logo_short-01.png'),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image.asset(
+                          'assets/boxLogo.png',
+                        ),
+                      ),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
                             Radius.circular(50.0),
