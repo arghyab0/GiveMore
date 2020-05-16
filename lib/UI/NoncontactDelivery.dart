@@ -33,6 +33,7 @@ class noncontactdelivery extends StatelessWidget {
                   backgroundColor: Color(0xFF2D0C57),
                   child: Image.asset(
                     'assets/bot.png',
+                    fit: BoxFit.cover,
                   ),
                   onPressed: () => launch(
                       'https://integrations.eu-gb.assistant.watson.cloud.ibm.com/web/public/8a91f772-2241-49c6-a3b0-8672318fbfb0'),

@@ -51,17 +51,20 @@ class _DetailsOneState extends State<DetailsOne> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  width: 30,
+                  width: 20,
                 ),
-                SizedBox(
-                  height: 280,
-                  child: FAProgressBar(
-                    progressColor: Colors.purpleAccent,
-                    borderRadius: 8,
-                    size: 18,
-                    direction: Axis.vertical,
-                    verticalDirection: VerticalDirection.down,
-                    currentValue: 50,
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    height: 280,
+                    child: FAProgressBar(
+                      progressColor: Color.fromRGBO(114, 3, 255, 1),
+                      borderRadius: 8,
+                      size: 18,
+                      direction: Axis.vertical,
+                      verticalDirection: VerticalDirection.down,
+                      currentValue: 50,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -81,7 +84,7 @@ class _DetailsOneState extends State<DetailsOne> {
                       ),
                     ),
                     Text(
-                      'Adress - 1',
+                      "Alexander Smith\nCross\nStreet",
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Colors.grey,
@@ -90,9 +93,10 @@ class _DetailsOneState extends State<DetailsOne> {
                       ),
                     ),
                     SizedBox(
-                      height: 70,
+                      height: 40,
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Column(
@@ -109,7 +113,7 @@ class _DetailsOneState extends State<DetailsOne> {
                               ),
                             ),
                             Text(
-                              'Address - 2',
+                              "Alexander Smith\nCross\nStreet",
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -134,9 +138,10 @@ class _DetailsOneState extends State<DetailsOne> {
                       ],
                     ),
                     SizedBox(
-                      height: 70,
+                      height: 40,
                     ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Column(
@@ -153,7 +158,7 @@ class _DetailsOneState extends State<DetailsOne> {
                               ),
                             ),
                             Text(
-                              'Address - 3',
+                              "Alexander Smith\nCross\nStreet",
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -269,7 +274,7 @@ class _DetailsOneState extends State<DetailsOne> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(20),
               child: TextFormField(
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.symmetric(vertical: 1),
@@ -292,26 +297,30 @@ class _DetailsOneState extends State<DetailsOne> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    side: BorderSide(
-                      color: Color.fromRGBO(11, 206, 131, 1),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      side: BorderSide(
+                        color: Color.fromRGBO(11, 206, 131, 1),
+                      ),
                     ),
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 175, vertical: 15),
-                  focusElevation: 10,
-                  color: Color.fromRGBO(11, 206, 131, 1),
-                  child: Text(
-                    'VERIFY',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Poppins',
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 160, vertical: 15),
+                    focusElevation: 10,
+                    color: Color.fromRGBO(11, 206, 131, 1),
+                    child: Text(
+                      'VERIFY',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                      ),
                     ),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/thanks');
+                    },
                   ),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/thanks');
-                  },
                 ),
               ],
             ),

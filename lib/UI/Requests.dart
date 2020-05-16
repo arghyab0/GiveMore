@@ -3,6 +3,7 @@ import 'package:covidist/UI/categories%20(1).dart';
 import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/new_donation.dart';
 import 'package:covidist/UI/pickup.dart';
+import 'package:covidist/UI/yourcart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -193,7 +194,7 @@ class Requests extends StatelessWidget {
         },
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 2,
+        currentIndex: 0,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
@@ -210,13 +211,13 @@ class Requests extends StatelessWidget {
 }
 
 moveto(index, cont) {
-  if (index == 0) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => categories()));
-  } else if (index == 1) {
+  if (index == 1) {
+    Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
+  } else if (index == 2) {
     Navigator.push(
       cont,
       MaterialPageRoute(
-        builder: (context) => CheckOut(),
+        builder: (context) => requestlisted(),
       ),
     );
   }

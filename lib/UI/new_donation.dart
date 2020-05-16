@@ -217,7 +217,7 @@ class _NewDonationState extends State<NewDonation> {
                           Radius.circular(50.0),
                         ),
                       ),
-                      onPressed: add,
+                      onPressed: () {},
                       child: Icon(
                         Icons.camera_alt,
                         color: Color.fromRGBO(45, 12, 87, 1.0),

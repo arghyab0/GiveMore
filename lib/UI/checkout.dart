@@ -79,7 +79,8 @@ class _CheckOutState extends State<CheckOut> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -104,9 +105,10 @@ class _CheckOutState extends State<CheckOut> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   SizedBox(
                     width: 30,
@@ -118,12 +120,23 @@ class _CheckOutState extends State<CheckOut> {
                   SizedBox(
                     width: 25,
                   ),
-                  Text("Alexander Smith"),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        "Alexander Smith\nCross\nStreet\nstate",
+                        style: TextStyle(fontSize: 18),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -136,20 +149,11 @@ class _CheckOutState extends State<CheckOut> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  FlatButton(
-                    onPressed: () {},
-                    child: Text(
-                      'CHANGE',
-                      style: TextStyle(
-                        color: Color.fromRGBO(114, 3, 255, 1),
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -199,7 +203,7 @@ class _CheckOutState extends State<CheckOut> {
                     ),
                   ),
                   SizedBox(
-                    width: 135,
+                    width: 129,
                   ),
                   Radio(
                     value: SingingCharecter.courier,
@@ -227,10 +231,13 @@ class _CheckOutState extends State<CheckOut> {
                   style: TextStyle(
                     fontSize: MediaQuery.of(context).size.width * 0.055,
                   ),
-                  underline: Container(height: 2, color: Colors.purpleAccent),
+                  underline: Container(
+                    height: 2,
+                    color: Color.fromRGBO(114, 3, 255, 1),
+                  ),
                   value: selected,
                   items: listDrop,
-                  hint: new Text('Choose Any One'),
+                  hint: new Text('Choose any one'),
                   onChanged: (value) {
                     selected = value;
                     setState(() {});

@@ -47,24 +47,28 @@ class _DetailsTwoState extends State<DetailsTwo> {
               height: 20,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  width: 30,
+                  width: 20,
                 ),
-                SizedBox(
-                  height: 280,
-                  child: FAProgressBar(
-                    progressColor: Colors.purpleAccent,
-                    borderRadius: 8,
-                    size: 18,
-                    direction: Axis.vertical,
-                    verticalDirection: VerticalDirection.down,
-                    currentValue: 50,
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    height: 260,
+                    child: FAProgressBar(
+                      progressColor: Colors.purpleAccent,
+                      borderRadius: 8,
+                      size: 18,
+                      direction: Axis.vertical,
+                      verticalDirection: VerticalDirection.down,
+                      currentValue: 0,
+                    ),
                   ),
                 ),
                 SizedBox(
-                  width: 30,
+                  width: 20,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +84,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                       ),
                     ),
                     Text(
-                      'Adress - 1',
+                      "Alexander Smith\nCross\nStreet",
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Colors.grey,
@@ -89,7 +93,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                       ),
                     ),
                     SizedBox(
-                      height: 70,
+                      height: 40,
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,7 +112,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               ),
                             ),
                             Text(
-                              'Address - 2',
+                              "Alexander Smith\nCross\nStreet",
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -121,7 +125,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                       ],
                     ),
                     SizedBox(
-                      height: 70,
+                      height: 40,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -140,7 +144,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               ),
                             ),
                             Text(
-                              'Address - 3',
+                              "Alexander Smith\nCross\nStreet",
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -229,7 +233,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           ),
                         ),
                         Text(
-                          'Boston Lettuce',
+                          'Coffee',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),

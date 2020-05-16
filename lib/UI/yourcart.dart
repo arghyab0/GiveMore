@@ -85,7 +85,7 @@ class YourCart extends StatelessWidget {
                               style: TextStyle(
                                   fontFamily: 'Poppins',
                                   color: Color.fromRGBO(45, 12, 87, 1.0),
-                                  fontSize: 17),
+                                  fontSize: 25),
                             ),
                           ),
                           Container(
@@ -131,7 +131,7 @@ class YourCart extends StatelessWidget {
 moveto(index, cont) {
   if (index == 0) {
     Navigator.push(cont, MaterialPageRoute(builder: (context) => Requests()));
-  } else if (index == 1) {
+  } else if (index == 2) {
     Navigator.push(
         cont, MaterialPageRoute(builder: (context) => requestlisted()));
   }

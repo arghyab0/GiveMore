@@ -136,7 +136,7 @@ class requestlisted extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart), title: Text("")),
-          BottomNavigationBarItem(icon: Icon(Icons.add), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),
         backgroundColor: Color.fromRGBO(246, 245, 245, 1),

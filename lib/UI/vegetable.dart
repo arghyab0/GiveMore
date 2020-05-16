@@ -1,5 +1,6 @@
 import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/itemdetails.dart';
+import 'package:covidist/UI/yourcart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -102,13 +103,13 @@ class vegetable extends StatelessWidget {
                                 names[position],
                                 style: TextStyle(
                                   color: Color.fromRGBO(45, 12, 87, 1.0),
+                                  fontSize: 25,
                                 ),
                               ),
                             ],
                           ),
                         ),
                       ),
-                     
                       Container(
                         alignment: Alignment.bottomRight,
                         margin: EdgeInsets.only(
@@ -124,7 +125,7 @@ class vegetable extends StatelessWidget {
                               color: Color(0xFF0BCE83),
                               padding: EdgeInsets.all(8.0),
                               onPressed: () {
-                                // Navigator.of(context).pushNamed('/itemdetails');
+                                Navigator.of(context).pushNamed('/checkout');
                               },
                               child: Icon(Icons.shopping_cart,
                                   color: Colors.white)),
@@ -159,7 +160,7 @@ class vegetable extends StatelessWidget {
 
 moveto(index, cont) {
   if (index == 1) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => CheckOut()));
+    Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
   } else if (index == 2) {
     Navigator.push(
         cont, MaterialPageRoute(builder: (context) => NewDonation()));

@@ -41,19 +41,19 @@ class youractivity extends StatelessWidget {
                           SizedBox(
                             height: 10,
                           ),
-                          Text("123-London Street, Delhi",
+                          Text("  123-London Street, Delhi",
                               style: TextStyle(
                                   fontFamily: 'Poppins',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
-                          Text("Name",
+                          Text("  Name",
                               style: TextStyle(
                                   fontFamily: 'Poppins',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
-                          Text("Object",
+                          Text("  Object",
                               style: TextStyle(
                                   fontFamily: 'Poppins',
                                   color: Colors.grey,
@@ -82,7 +82,7 @@ class youractivity extends StatelessWidget {
                       Column(
                         children: <Widget>[
                           SizedBox(
-                            height: 50,
+                            height: 60,
                           ),
                           Container(
                             alignment: Alignment.bottomRight,

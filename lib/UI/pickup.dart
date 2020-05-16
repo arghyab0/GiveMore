@@ -56,7 +56,7 @@ class _PickUpState extends State<PickUp> {
               height: 10,
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -84,6 +84,7 @@ class _PickUpState extends State<PickUp> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   SizedBox(
                     width: 30,
@@ -95,15 +96,18 @@ class _PickUpState extends State<PickUp> {
                   SizedBox(
                     width: 25,
                   ),
-                  Text("Alexander Smith"),
+                  Text(
+                    "Alexander Smith\nCross\nStreet\nstate",
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ],
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -114,15 +118,6 @@ class _PickUpState extends State<PickUp> {
                       fontFamily: 'poppins',
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  FlatButton(
-                    onPressed: () {},
-                    child: Text(
-                      'CHANGE',
-                      style: TextStyle(
-                        color: Color.fromRGBO(114, 3, 255, 1),
-                      ),
                     ),
                   ),
                 ],
