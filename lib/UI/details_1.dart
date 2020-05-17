@@ -11,6 +11,7 @@ class DetailsOne extends StatefulWidget {
 class _DetailsOneState extends State<DetailsOne> {
   bool pickup = false;
   bool destination = false;
+  int progress = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +64,7 @@ class _DetailsOneState extends State<DetailsOne> {
                       size: 18,
                       direction: Axis.vertical,
                       verticalDirection: VerticalDirection.down,
-                      currentValue: 50,
+                      currentValue: progress,
                     ),
                   ),
                 ),
@@ -90,6 +91,9 @@ class _DetailsOneState extends State<DetailsOne> {
                         color: Colors.grey,
                         fontFamily: 'poppins',
                         fontSize: 15,
+                      ),
+                      strutStyle: StrutStyle(
+                        height: 1.5,
                       ),
                     ),
                     SizedBox(
@@ -120,6 +124,9 @@ class _DetailsOneState extends State<DetailsOne> {
                                 fontFamily: 'poppins',
                                 fontSize: 15,
                               ),
+                              strutStyle: StrutStyle(
+                                height: 1.5,
+                              ),
                             ),
                           ],
                         ),
@@ -131,7 +138,13 @@ class _DetailsOneState extends State<DetailsOne> {
                           value: pickup,
                           onChanged: (bool newValue) {
                             setState(() {
+                              if (pickup == true) {
+                                progress = 0;
+                              } else {
+                                progress = 50;
+                              }
                               pickup = newValue;
+                              print(pickup);
                             });
                           },
                         ),
@@ -165,6 +178,9 @@ class _DetailsOneState extends State<DetailsOne> {
                                 fontFamily: 'poppins',
                                 fontSize: 15,
                               ),
+                              strutStyle: StrutStyle(
+                                height: 1.5,
+                              ),
                             ),
                           ],
                         ),
@@ -177,6 +193,13 @@ class _DetailsOneState extends State<DetailsOne> {
                           onChanged: (bool newValue) {
                             setState(() {
                               destination = newValue;
+                              if (destination == true) {
+                                progress = 100;
+                                pickup = true;
+                              } else {
+                                progress = 50;
+                              }
+                              print(destination);
                             });
                           },
                         ),
@@ -259,7 +282,7 @@ class _DetailsOneState extends State<DetailsOne> {
                           ),
                         ),
                         Text(
-                          'Boston Lettuce',
+                          'Coffee',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),

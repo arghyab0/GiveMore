@@ -1,4 +1,5 @@
 import 'package:covidist/UI/Requests.dart';
+import 'package:covidist/services/auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -10,10 +11,23 @@ import 'categories (1).dart';
 class noncontactdelivery extends StatelessWidget {
   String con =
       'When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.';
-
+  final AuthService _auth = AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 0.0,
+        //backgroundColor: Image.asset('name'),
+        actions: <Widget>[
+          FlatButton.icon(
+            icon: Icon(Icons.person),
+            label: Text('Logout'),
+            onPressed: () async {
+              await _auth.signOut();
+            },
+          )
+        ],
+      ),
       body: SingleChildScrollView(
         child: Stack(children: <Widget>[
           Image.asset(
@@ -23,12 +37,12 @@ class noncontactdelivery extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          Center(
+          Container(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 80),
+              padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 20),
               child: Container(
-                height: 100,
-                width: 100,
+                height: 70,
+                width: 70,
                 child: FloatingActionButton(
                   backgroundColor: Color(0xFF2D0C57),
                   child: Image.asset(

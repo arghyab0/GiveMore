@@ -21,6 +21,7 @@ class _CheckOutState extends State<CheckOut> {
   String dropdownvalue = 'Ration Id';
   List<DropdownMenuItem<String>> listDrop = [];
   String selected = null;
+  String text = null;
   void loadData() {
     listDrop = [];
     listDrop.add(
@@ -47,9 +48,20 @@ class _CheckOutState extends State<CheckOut> {
     );
   }
 
+  // void stringchange(String str) {
+  //   if (selected == 'Ration') {
+  //     Text('Ration Card Id');
+  //   } else if (selected == 'Organization') {
+  //     Text('Organization Name');
+  //   } else {
+  //     Text('Choose any one from above');
+  //   }
+  // }
+
   @override
   Widget build(BuildContext context) {
     loadData();
+    stringcange(selected);
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -124,7 +136,12 @@ class _CheckOutState extends State<CheckOut> {
                     children: <Widget>[
                       Text(
                         "Alexander Smith\nCross\nStreet\nstate",
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                        strutStyle: StrutStyle(
+                          height: 1.5,
+                        ),
                       ),
                     ],
                   ),
@@ -240,6 +257,7 @@ class _CheckOutState extends State<CheckOut> {
                   hint: new Text('Choose any one'),
                   onChanged: (value) {
                     selected = value;
+                    print(selected);
                     setState(() {});
                   },
                 ),
@@ -253,7 +271,7 @@ class _CheckOutState extends State<CheckOut> {
                   labelStyle: TextStyle(
                     color: Color.fromRGBO(45, 12, 87, 1.0),
                   ),
-                  labelText: "   Ration Card ID / Organization Name",
+                  labelText: text,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -335,6 +353,16 @@ class _CheckOutState extends State<CheckOut> {
         backgroundColor: Color.fromRGBO(246, 245, 245, 1),
       ),
     );
+  }
+
+  stringcange(String selected) {
+    if (selected == 'Ration') {
+      text = '  Ration Card ID';
+    } else if (selected == 'Organization') {
+      text = '  Organization Name';
+    } else {
+      text = '  Choose any one from the above';
+    }
   }
 }
 

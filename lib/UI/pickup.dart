@@ -98,7 +98,12 @@ class _PickUpState extends State<PickUp> {
                   ),
                   Text(
                     "Alexander Smith\nCross\nStreet\nstate",
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                    strutStyle: StrutStyle(
+                      height: 1.5,
+                    ),
                   ),
                 ],
               ),

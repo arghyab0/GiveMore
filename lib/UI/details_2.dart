@@ -91,6 +91,9 @@ class _DetailsTwoState extends State<DetailsTwo> {
                         fontFamily: 'poppins',
                         fontSize: 15,
                       ),
+                      strutStyle: StrutStyle(
+                        height: 1.5,
+                      ),
                     ),
                     SizedBox(
                       height: 40,
@@ -118,6 +121,9 @@ class _DetailsTwoState extends State<DetailsTwo> {
                                 color: Colors.grey,
                                 fontFamily: 'poppins',
                                 fontSize: 15,
+                              ),
+                              strutStyle: StrutStyle(
+                                height: 1.5,
                               ),
                             ),
                           ],
@@ -150,6 +156,9 @@ class _DetailsTwoState extends State<DetailsTwo> {
                                 color: Colors.grey,
                                 fontFamily: 'poppins',
                                 fontSize: 15,
+                              ),
+                              strutStyle: StrutStyle(
+                                height: 1.5,
                               ),
                             ),
                           ],
