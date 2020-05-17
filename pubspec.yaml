@@ -29,6 +29,7 @@ dependencies:
   flutter_animation_progress_bar: ^1.0.0
   circular_check_box: ^1.0.2
   url_launcher: ^5.4.7
+  flutter_spinkit: ^4.1.2+1
 
 
 dev_dependencies:

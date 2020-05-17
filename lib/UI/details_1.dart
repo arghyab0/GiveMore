@@ -140,6 +140,7 @@ class _DetailsOneState extends State<DetailsOne> {
                             setState(() {
                               if (pickup == true) {
                                 progress = 0;
+                                destination = false;
                               } else {
                                 progress = 50;
                               }

@@ -62,7 +62,7 @@ class noncontactdelivery extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.bottomCenter,
-                padding: EdgeInsets.only(top: 10, left: 20, right: 20),
+                padding: EdgeInsets.only(top: 20, left: 20, right: 20),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(50),
