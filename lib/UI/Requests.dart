@@ -1,5 +1,5 @@
 import 'package:covidist/UI/RequestListed.dart';
-import 'package:covidist/UI/categories%20(1).dart';
+import 'package:covidist/UI/categories.dart';
 import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/new_donation.dart';
 import 'package:covidist/UI/pickup.dart';

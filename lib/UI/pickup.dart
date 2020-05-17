@@ -3,7 +3,7 @@ import 'package:covidist/UI/donationlisted.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'categories (1).dart';
+import 'categories.dart';
 import 'new_donation.dart';
 
 enum SingingCharecter { pickup, courier }

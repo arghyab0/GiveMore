@@ -1,9 +1,8 @@
-import 'package:covidist/UI/Done%20(1).dart';
+import 'package:covidist/UI/Done.dart';
 import 'package:covidist/UI/NoncontactDelivery.dart';
 import 'package:covidist/UI/Requests.dart';
 import 'package:covidist/UI/YourActivity.dart';
 import 'package:covidist/UI/YourActivitydone.dart';
-import 'package:covidist/UI/categories%20(1).dart';
 import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/details_1.dart';
 import 'package:covidist/UI/details_2.dart';
@@ -23,6 +22,7 @@ import 'package:covidist/screens/wrapper.dart';
 import 'package:covidist/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'UI/categories.dart';
 import 'models/user.dart';
 
 void main() => runApp(MyApp());

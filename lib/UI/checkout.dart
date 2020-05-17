@@ -1,4 +1,4 @@
-import 'package:covidist/UI/categories%20(1).dart';
+import 'package:covidist/UI/categories.dart';
 import 'package:covidist/UI/itemdetails.dart';
 import 'package:covidist/UI/new_donation.dart';
 import 'package:covidist/UI/requestpublished.dart';

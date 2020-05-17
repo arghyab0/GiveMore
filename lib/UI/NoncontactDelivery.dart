@@ -6,7 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/services.dart';
 
-import 'categories (1).dart';
+import 'categories.dart';
 
 class noncontactdelivery extends StatelessWidget {
   String con =
@@ -15,24 +15,34 @@ class noncontactdelivery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.0,
-        //backgroundColor: Image.asset('name'),
-        actions: <Widget>[
-          FlatButton.icon(
-            icon: Icon(Icons.person),
-            label: Text('Logout'),
-            onPressed: () async {
-              await _auth.signOut();
-            },
-          )
-        ],
-      ),
       body: SingleChildScrollView(
         child: Stack(children: <Widget>[
+          
           Image.asset(
             "assets/base.png",
             fit: BoxFit.cover,
+          ),
+          Container(
+            alignment: Alignment.topRight,
+            padding: EdgeInsets.only(right: 20),
+            child: Container(
+              width: 55,
+              height: 55,
+              margin: EdgeInsets.only(top: 45, left: 260),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                  color: Color(0xff524236)),
+              child: new IconButton(
+                icon: new Icon(
+                  Icons.person_outline,
+                  color: Colors.white,
+                  size: 35,
+                ),
+                onPressed: () async {
+                  await _auth.signOut();
+                },
+              ),
+            ),
           ),
           SizedBox(
             height: 50,
