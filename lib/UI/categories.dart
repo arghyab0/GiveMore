@@ -5,7 +5,6 @@ import 'package:covidist/UI/request_donation.dart';
 import 'package:covidist/UI/vegetable.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:covidist/services/auth.dart';
 
 class categories extends StatefulWidget {
   @override
@@ -44,7 +43,6 @@ class _categoriesState extends State<categories> {
     });
   }
 
-  final AuthService _auth = AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,9 +65,7 @@ class _categoriesState extends State<categories> {
                   color: Colors.white,
                   size: 35,
                 ),
-                onPressed: () async {
-                  // await _auth.signOut();
-                },
+                onPressed: () {},
               ),
             ),
           ),

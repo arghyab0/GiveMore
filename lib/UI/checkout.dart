@@ -5,6 +5,7 @@ import 'package:covidist/UI/requestpublished.dart';
 import 'package:covidist/UI/requestreceived.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:covidist/screens/authenticte/register.dart';
 
 enum SingingCharecter { pickup, courier }
 
@@ -22,6 +23,8 @@ class _CheckOutState extends State<CheckOut> {
   List<DropdownMenuItem<String>> listDrop = [];
   String selected = null;
   String text = null;
+
+  //String get address => address;
   void loadData() {
     listDrop = [];
     listDrop.add(
@@ -135,7 +138,7 @@ class _CheckOutState extends State<CheckOut> {
                   Row(
                     children: <Widget>[
                       Text(
-                        "Alexander Smith\nCross\nStreet\nstate",
+                        'address',
                         style: TextStyle(
                           fontSize: 18,
                         ),

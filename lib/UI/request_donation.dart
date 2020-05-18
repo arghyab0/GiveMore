@@ -1,6 +1,8 @@
 import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/vegetable.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class RequestDonation extends StatefulWidget {
   @override
@@ -8,7 +10,31 @@ class RequestDonation extends StatefulWidget {
 }
 
 class _RequestDonationState extends State<RequestDonation> {
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+  Future<int> _counter;
+
+  Future<void> _incrementCounter() async {
+    final SharedPreferences prefs = await _prefs;
+    final int counter = (prefs.getInt('counter') ?? 0) + 1;
+
+    setState(() {
+      _counter = prefs.setInt("counter", counter).then((bool success) {
+        return counter;
+      });
+    });
+  }
+
+  void initState() {
+    super.initState();
+    _counter = _prefs.then((SharedPreferences prefs) {
+      return (prefs.getInt('counter') ?? 0);
+    });
+  }
+
+  @override
   int _n = 0;
+
   @override
   Widget build(BuildContext context) {
     void add() {
@@ -61,6 +87,7 @@ class _RequestDonationState extends State<RequestDonation> {
                   height: 30,
                 ),
                 TextFormField(
+                  onChanged: (val) {},
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(vertical: 1),
                     labelStyle: TextStyle(

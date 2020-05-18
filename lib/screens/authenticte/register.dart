@@ -1,3 +1,4 @@
+import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/services/auth.dart';
 import 'package:covidist/shared/loading.dart';
 import 'package:flutter/material.dart';
@@ -12,11 +13,13 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
+
   bool loading = false;
 
   String email = '';
   String password = '';
   String error = '';
+  String address = '';
 
   @override
   Widget build(BuildContext context) {
@@ -152,6 +155,9 @@ class _RegisterState extends State<Register> {
                         height: 25,
                       ),
                       TextFormField(
+                        onChanged: (val) {
+                          setState(() => address = val);
+                        },
                         validator: (val) {
                           if (val.isEmpty && val.length < 10) {
                             return "Enter a valid Address";

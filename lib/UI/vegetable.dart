@@ -1,5 +1,6 @@
 import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/itemdetails.dart';
+import 'package:covidist/UI/request_donation.dart';
 import 'package:covidist/UI/yourcart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -163,6 +164,6 @@ moveto(index, cont) {
     Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
   } else if (index == 2) {
     Navigator.push(
-        cont, MaterialPageRoute(builder: (context) => NewDonation()));
+        cont, MaterialPageRoute(builder: (context) => RequestDonation()));
   }
 }
