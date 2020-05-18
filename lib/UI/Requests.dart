@@ -42,8 +42,8 @@ class Requests extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 70,
-                height: 70,
+                width: 55,
+                height: 55,
                 margin: EdgeInsets.only(top: 45, left: 260),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(50.0)),
@@ -199,7 +199,7 @@ class Requests extends StatelessWidget {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart), title: Text("")),
+              icon: Icon(Icons. history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),

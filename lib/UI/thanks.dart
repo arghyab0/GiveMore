@@ -14,7 +14,7 @@ class Thanks extends StatelessWidget {
           Column(
             children: <Widget>[
               SizedBox(
-                height: 300,
+                height: 350,
               ),
               Container(
                 alignment: Alignment.bottomCenter,
@@ -88,6 +88,9 @@ class Thanks extends StatelessWidget {
                             child: Text("BACK TO ACTIVITY",
                                 style: TextStyle(color: Colors.white))),
                       ),
+                    ),
+                    SizedBox(
+                      height: 40,
                     ),
                   ],
                 ),
