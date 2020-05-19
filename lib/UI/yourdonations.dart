@@ -39,14 +39,12 @@ class YourCart extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(left: 20),
-            child: Text(
-              "Your Cart",
-              style: TextStyle(
-                  fontFamily: 'OpenSans',
-                  color: Color(0xFF2D0C57),
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold),
-            ),
+            child: Text("Your Donations",
+                style: TextStyle(
+                    fontFamily: 'Poppins',
+                    color: Color(0xFF2D0C57),
+                    fontSize: 34,
+                    fontWeight: FontWeight.bold)),
           ),
           Expanded(
             child: ListView.builder(
@@ -85,10 +83,9 @@ class YourCart extends StatelessWidget {
                             child: Text(
                               names[position],
                               style: TextStyle(
-                                  fontFamily: 'OpenSans',
-                                  fontWeight: FontWeight.normal,
+                                  fontFamily: 'Poppins',
                                   color: Color.fromRGBO(45, 12, 87, 1.0),
-                                  fontSize: 22),
+                                  fontSize: 25),
                             ),
                           ),
                           Container(
@@ -97,10 +94,9 @@ class YourCart extends StatelessWidget {
                             child: Text(
                               'Quantity: 2',
                               style: TextStyle(
-                                  fontFamily: 'OpenSans',
-                                  fontWeight: FontWeight.normal,
+                                  fontFamily: 'Poppins',
                                   color: Colors.grey,
-                                  fontSize: 16),
+                                  fontSize: 17),
                             ),
                           ),
                         ],
@@ -121,7 +117,7 @@ class YourCart extends StatelessWidget {
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),

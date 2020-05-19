@@ -127,10 +127,10 @@ class noncontactdelivery extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 70,
                       ),
                       Container(
-                        alignment: Alignment.center,
+                        alignment: Alignment.bottomCenter,
                         child: SizedBox(
                           width: 320,
                           height: 50,
@@ -158,7 +158,7 @@ class noncontactdelivery extends StatelessWidget {
                         height: 20,
                       ),
                       Container(
-                        alignment: Alignment.center,
+                        alignment: Alignment.bottomCenter,
                         child: SizedBox(
                           width: 320,
                           height: 50,
