@@ -4,13 +4,14 @@ import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/new_donation.dart';
 import 'package:covidist/UI/pickup.dart';
 import 'package:covidist/UI/yourcart.dart';
+import 'package:covidist/UI/yourdonations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'NoncontactDelivery.dart';
 
 class Requests extends StatelessWidget {
-  var names = ["Tomato", "Potato","Okra","String Beans"];
+  var names = ["Tomato", "Potato", "Okra", "String Beans"];
   var img = [
     "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
@@ -207,7 +208,8 @@ class Requests extends StatelessWidget {
 
 moveto(index, cont) {
   if (index == 1) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
+    Navigator.push(
+        cont, MaterialPageRoute(builder: (context) => YourDonation()));
   } else if (index == 2) {
     Navigator.push(
       cont,

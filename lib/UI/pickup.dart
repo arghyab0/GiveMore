@@ -1,6 +1,7 @@
 import 'package:covidist/UI/Requests.dart';
 import 'package:covidist/UI/donationlisted.dart';
 import 'package:covidist/UI/yourcart.dart';
+import 'package:covidist/UI/yourdonations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -260,7 +261,8 @@ class _PickUpState extends State<PickUp> {
 
 moveto(index, cont) {
   if (index == 1) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
+    Navigator.push(
+        cont, MaterialPageRoute(builder: (context) => YourDonation()));
   } else if (index == 2) {
     Navigator.push(
         cont, MaterialPageRoute(builder: (context) => NewDonation()));

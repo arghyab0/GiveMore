@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'Requests.dart';
 
-class YourCart extends StatelessWidget {
+class YourDonation extends StatelessWidget {
   var names = ["Tomato", "Boston Lettuce", "Potato"];
   var img = [
     "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",

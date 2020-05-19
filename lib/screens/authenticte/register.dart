@@ -246,7 +246,7 @@ class _RegisterState extends State<Register> {
                           'LOG IN',
                           style: TextStyle(
                             color: Color.fromRGBO(11, 206, 131, 1),
-                            fontWeight: FontWeight.normal,
+                            fontWeight: FontWeight.w800,
                             fontFamily: 'OpenSans',
                           ),
                         ),
