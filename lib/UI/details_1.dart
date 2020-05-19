@@ -39,7 +39,7 @@ class _DetailsOneState extends State<DetailsOne> {
                 textAlign: TextAlign.left,
                 style: TextStyle(
                   color: Color.fromRGBO(45, 12, 87, 1.0),
-                  fontFamily: 'poppins',
+                  fontFamily: 'OpenSans',
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
                 ),
@@ -79,7 +79,7 @@ class _DetailsOneState extends State<DetailsOne> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
                       ),
@@ -89,7 +89,7 @@ class _DetailsOneState extends State<DetailsOne> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Colors.grey,
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontSize: 15,
                       ),
                       strutStyle: StrutStyle(
@@ -111,7 +111,7 @@ class _DetailsOneState extends State<DetailsOne> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
                               ),
@@ -121,7 +121,7 @@ class _DetailsOneState extends State<DetailsOne> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontSize: 15,
                               ),
                               strutStyle: StrutStyle(
@@ -166,7 +166,7 @@ class _DetailsOneState extends State<DetailsOne> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
                               ),
@@ -176,7 +176,7 @@ class _DetailsOneState extends State<DetailsOne> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontSize: 15,
                               ),
                               strutStyle: StrutStyle(
@@ -227,7 +227,7 @@ class _DetailsOneState extends State<DetailsOne> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 25,
                           ),
                         ),
@@ -239,7 +239,7 @@ class _DetailsOneState extends State<DetailsOne> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Colors.grey,
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -251,7 +251,7 @@ class _DetailsOneState extends State<DetailsOne> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Colors.grey,
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -287,7 +287,7 @@ class _DetailsOneState extends State<DetailsOne> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -337,9 +337,9 @@ class _DetailsOneState extends State<DetailsOne> {
                     child: Text(
                       'VERIFY',
                       style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Poppins',
-                      ),
+                          color: Colors.white,
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.w800),
                     ),
                     onPressed: () {
                       Navigator.of(context).pushNamed('/thanks');

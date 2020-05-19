@@ -14,8 +14,7 @@ class youractivity extends StatelessWidget {
             padding: EdgeInsets.only(left: 20, top: 50),
             child: Text("Your Activity",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
-                    color: Color(0xFF2D0C57),
+                    fontFamily: 'OpenSans',
                     fontSize: 30,
                     fontWeight: FontWeight.bold)),
           ),
@@ -34,7 +33,7 @@ class youractivity extends StatelessWidget {
                         children: <Widget>[
                           Text("Pickup from:",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Color(0xFF2D0C57),
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold)),
@@ -43,19 +42,19 @@ class youractivity extends StatelessWidget {
                           ),
                           Text("  123-London Street, Delhi",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
                           Text("  Name",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
                           Text("  Object",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
@@ -72,7 +71,7 @@ class youractivity extends StatelessWidget {
                           child: Text(
                             "View Details",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: 'OpenSans',
                                 color: Colors.grey,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold),

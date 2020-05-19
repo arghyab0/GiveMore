@@ -41,7 +41,7 @@ class requestlisted extends StatelessWidget {
             padding: EdgeInsets.only(left: 20),
             child: Text("Requests",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: 'OpenSans',
                     color: Color(0xFF2D0C57),
                     fontSize: 34,
                     fontWeight: FontWeight.bold)),
@@ -75,7 +75,8 @@ class requestlisted extends StatelessWidget {
                           ),
                           Text(names[position],
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
+                                  fontWeight: FontWeight.normal,
                                   color: Color(0xFF2D0C57),
                                   fontSize: 18)),
                         ],
@@ -85,7 +86,8 @@ class requestlisted extends StatelessWidget {
                         padding: EdgeInsets.only(top: 10, right: 10),
                         child: Text("Personal /Orag Name",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: 'OpenSans',
+                                fontWeight: FontWeight.normal,
                                 color: Colors.grey,
                                 fontSize: 17)),
                       ),
@@ -112,7 +114,11 @@ class requestlisted extends StatelessWidget {
                                   },
                                   child: Text(
                                     "    DONATE",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontFamily: 'OpenSans',
+                                      fontWeight: FontWeight.w800,
+                                    ),
                                   )),
                             ),
                           ),
@@ -134,8 +140,7 @@ class requestlisted extends StatelessWidget {
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),

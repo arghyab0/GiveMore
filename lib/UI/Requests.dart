@@ -65,7 +65,7 @@ class Requests extends StatelessWidget {
             child: Text(
               "Requests",
               style: TextStyle(
-                  fontFamily: 'Poppins',
+                  fontFamily: 'OpenSans',
                   color: Color(0xFF2D0C57),
                   fontSize: 34,
                   fontWeight: FontWeight.bold),
@@ -102,7 +102,8 @@ class Requests extends StatelessWidget {
                           Text(
                             names[position],
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: 'OpenSans',
+                                fontWeight: FontWeight.normal,
                                 color: Color(0xFF2D0C57),
                                 fontSize: 18),
                           ),
@@ -114,7 +115,8 @@ class Requests extends StatelessWidget {
                         child: Text(
                           "Personal /Orag Name",
                           style: TextStyle(
-                              fontFamily: 'Poppins',
+                              fontFamily: 'OpenSans',
+                              fontWeight: FontWeight.normal,
                               color: Colors.grey,
                               fontSize: 17),
                         ),
@@ -159,12 +161,7 @@ class Requests extends StatelessWidget {
                                 ),
                                 color: Colors.red,
                                 padding: EdgeInsets.all(8.0),
-                                onPressed: () {
-//                                    Navigator.push(
-//                                        context,
-//                                        MaterialPageRoute(
-//                                            builder: (context) => ItemDetails()));
-                                },
+                                onPressed: () {},
                                 child: Icon(Icons.clear, color: Colors.white),
                               ),
                             ),
@@ -176,8 +173,7 @@ class Requests extends StatelessWidget {
                 );
               },
             ),
-          ),
-
+          )
           ////////////////////////////
         ],
       ),
@@ -198,8 +194,7 @@ class Requests extends StatelessWidget {
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
-          BottomNavigationBarItem(
-              icon: Icon(Icons. history), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),

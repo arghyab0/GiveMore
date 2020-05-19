@@ -1,4 +1,8 @@
+import 'dart:io';
+
+import 'package:camera/new/src/support_android/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class NewDonation extends StatefulWidget {
   @override
@@ -6,6 +10,19 @@ class NewDonation extends StatefulWidget {
 }
 
 class _NewDonationState extends State<NewDonation> {
+  File _image;
+  Future getImage(bool isCamera) async {
+    File image;
+    if (isCamera) {
+      image = ImagePicker.pickImage(source: ImageSource.camera) as File;
+    } else {
+      image = ImagePicker.pickImage(source: ImageSource.gallery) as File;
+    }
+    setState(() {
+      _image = image;
+    });
+  }
+
   int _n = 0;
   @override
   Widget build(BuildContext context) {
@@ -48,7 +65,7 @@ class _NewDonationState extends State<NewDonation> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                       ),
@@ -63,6 +80,8 @@ class _NewDonationState extends State<NewDonation> {
                     contentPadding: EdgeInsets.symmetric(vertical: 1),
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                     ),
                     labelText: "   Title",
                     border: OutlineInputBorder(
@@ -84,6 +103,8 @@ class _NewDonationState extends State<NewDonation> {
                     contentPadding: EdgeInsets.symmetric(vertical: 1),
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                     ),
                     labelText: "   Tags",
                     border: OutlineInputBorder(
@@ -108,7 +129,8 @@ class _NewDonationState extends State<NewDonation> {
                         'Quantity:',
                         style: TextStyle(
                           color: Color.fromRGBO(45, 12, 87, 1.0),
-                          fontFamily: 'poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           fontSize: 25,
                         ),
                       ),
@@ -117,7 +139,8 @@ class _NewDonationState extends State<NewDonation> {
                       '$_n',
                       style: TextStyle(
                         fontSize: 30,
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
+                        fontWeight: FontWeight.normal,
                         color: Color.fromRGBO(45, 12, 87, 1.0),
                       ),
                     ),
@@ -184,6 +207,8 @@ class _NewDonationState extends State<NewDonation> {
                   decoration: InputDecoration(
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                       height: 5,
                     ),
                     labelText: "Description",
@@ -202,12 +227,13 @@ class _NewDonationState extends State<NewDonation> {
                       'Upload photos',
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
+                        fontWeight: FontWeight.normal,
                         fontSize: 25,
                       ),
                     ),
                     SizedBox(
-                      width: 90,
+                      width: 10,
                     ),
                     FloatingActionButton(
                       heroTag: '3',
@@ -217,9 +243,31 @@ class _NewDonationState extends State<NewDonation> {
                           Radius.circular(50.0),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        getImage(true);
+                      },
                       child: Icon(
                         Icons.camera_alt,
+                        color: Color.fromRGBO(45, 12, 87, 1.0),
+                      ),
+                      backgroundColor: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    FloatingActionButton(
+                      heroTag: '4',
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(width: 1),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(50.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        getImage(false);
+                      },
+                      child: Icon(
+                        Icons.insert_drive_file,
                         color: Color.fromRGBO(45, 12, 87, 1.0),
                       ),
                       backgroundColor: Colors.white,
@@ -229,6 +277,13 @@ class _NewDonationState extends State<NewDonation> {
                 SizedBox(
                   height: 60,
                 ),
+                _image == null
+                    ? Container()
+                    : Image.file(
+                        _image,
+                        height: 300,
+                        width: 300,
+                      ),
                 RaisedButton(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
@@ -243,7 +298,8 @@ class _NewDonationState extends State<NewDonation> {
                     'PROCEED',
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.w800,
                     ),
                   ),
                   onPressed: () {

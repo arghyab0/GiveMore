@@ -45,12 +45,14 @@ class vegetable extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(left: 20),
-            child: Text("Vegetables",
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    color: Color(0xFF2D0C57),
-                    fontSize: 34,
-                    fontWeight: FontWeight.bold)),
+            child: Text(
+              "Vegetables",
+              style: TextStyle(
+                  fontFamily: 'OpenSans',
+                  color: Color(0xFF2D0C57),
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
           Container(
             height: 80,
@@ -64,7 +66,11 @@ class vegetable extends StatelessWidget {
                   ),
                   filled: true,
                   prefixIcon: new Icon(Icons.search, color: Color(0xFF2D0C57)),
-                  hintStyle: new TextStyle(color: Colors.grey[600]),
+                  hintStyle: new TextStyle(
+                    color: Colors.grey[600],
+                    fontWeight: FontWeight.normal,
+                    fontFamily: 'OpenSans',
+                  ),
                   hintText: "Search",
                   fillColor: Colors.white70),
             ),
@@ -106,6 +112,8 @@ class vegetable extends StatelessWidget {
                                 style: TextStyle(
                                   color: Color.fromRGBO(45, 12, 87, 1.0),
                                   fontSize: 25,
+                                  fontFamily: 'OpenSans',
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ],

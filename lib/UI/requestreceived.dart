@@ -44,23 +44,25 @@ class RequestReceived extends StatelessWidget {
                     ),
                     Text("Request Received!",
                         style: TextStyle(
-                            fontFamily: 'Poppins',
-                            color: Color(0xFF2D0C57),
-                            fontSize: 34,
-                            fontWeight: FontWeight.bold)),
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF2D0C57),
+                          fontSize: 34,
+                        )),
                     SizedBox(
                       height: 20,
                     ),
                     Text(
                       con,
                       style: TextStyle(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           color: Color(0xFF9586A8),
                           fontSize: 17),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 60,
+                      height: 40,
                     ),
                     Container(
                       alignment: Alignment.center,
@@ -80,13 +82,17 @@ class RequestReceived extends StatelessWidget {
                           },
                           child: Text(
                             "BACK TO HOME",
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'OpenSans',
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 210,
                     ),
                   ],
                 ),

@@ -79,33 +79,37 @@ class MyAppState extends State<ItemDetails> {
                         children: <Widget>[
                           Text("Lettuce",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Color(0xFF2D0C57),
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold)),
                           SizedBox(
                             height: 20,
                           ),
-                          Text("1kg/1packet",
-                              style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  color: Color(0xFF0BCE83),
-                                  fontSize: 17)),
+                          Text(
+                            "1kg/1packet",
+                            style: TextStyle(
+                              fontFamily: 'OpenSans',
+                              color: Color(0xFF0BCE83),
+                              fontSize: 17,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
                           SizedBox(
                             height: 20,
                           ),
                           Text("Cabbage lettuce vegetable",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 10,
-                                  fontWeight: FontWeight.bold)),
+                                  fontWeight: FontWeight.normal)),
                           SizedBox(
                             height: 20,
                           ),
                           Text("Description",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Color(0xFF2D0C57),
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold)),
@@ -115,7 +119,7 @@ class MyAppState extends State<ItemDetails> {
                           Text(
                             con,
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: 'OpenSans',
                                 color: Colors.grey,
                                 fontSize: 17),
                           ),
@@ -142,7 +146,11 @@ class MyAppState extends State<ItemDetails> {
                                           color: Colors.white),
                                       Text(
                                         "    ADD TO CART",
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w800,
+                                          fontFamily: 'OpenSans',
+                                        ),
                                       )
                                     ],
                                   )),

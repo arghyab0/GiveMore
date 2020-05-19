@@ -37,10 +37,10 @@ class noncontactdelivery extends StatelessWidget {
                       height: 70,
                       width: 70,
                       child: FloatingActionButton(
-                        backgroundColor: Color(0xFF2D0C57),
+                        backgroundColor: Color(0xff524236),
                         child: Image.asset(
                           'assets/bot.png',
-                          fit: BoxFit.cover,
+                          fit: BoxFit.fill,
                         ),
                         onPressed: () => launch(
                             'https://integrations.eu-gb.assistant.watson.cloud.ibm.com/web/public/8a91f772-2241-49c6-a3b0-8672318fbfb0'),
@@ -50,10 +50,10 @@ class noncontactdelivery extends StatelessWidget {
                 ),
                 Container(
                   alignment: Alignment.topRight,
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: Container(
-                    width: 55,
-                    height: 55,
+                    width: 65,
+                    height: 65,
                     margin: EdgeInsets.only(top: 60, left: 220),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(50.0)),
@@ -84,15 +84,9 @@ class noncontactdelivery extends StatelessWidget {
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(50),
                           topRight: Radius.circular(50)),
-                      //borderRadius: BorderRadius.all(Radius.circular(50.0)),
                       color: Color.fromRGBO(246, 245, 245, 1)),
                   child: Column(
                     children: <Widget>[
-                      // Image.asset(
-                      //   'assets/logo_sort-01.png',
-                      //   fit: BoxFit.fill,
-                      //   height: 60,
-                      // ),
                       Container(
                         width: 80,
                         height: 80,
@@ -115,9 +109,9 @@ class noncontactdelivery extends StatelessWidget {
                       Text(
                         "Non-Contact Deliveries",
                         style: TextStyle(
-                            fontFamily: 'Poppins',
+                            fontFamily: 'OpenSans',
                             color: Color(0xFF2D0C57),
-                            fontSize: 34,
+                            fontSize: 32,
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       ),
@@ -151,7 +145,11 @@ class noncontactdelivery extends StatelessWidget {
                             },
                             child: Text(
                               "REQUEST NOW",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'OpenSans',
+                                fontWeight: FontWeight.w800,
+                              ),
                             ),
                           ),
                         ),
@@ -175,13 +173,16 @@ class noncontactdelivery extends StatelessWidget {
                             },
                             child: Text(
                               "DONATE NOW",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w800,
+                                  fontFamily: 'OpenSans'),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 30,
+                        height: 150,
                       ),
                     ],
                   ),

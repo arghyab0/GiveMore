@@ -76,7 +76,7 @@ class _RequestDonationState extends State<RequestDonation> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                       ),
@@ -92,6 +92,8 @@ class _RequestDonationState extends State<RequestDonation> {
                     contentPadding: EdgeInsets.symmetric(vertical: 1),
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                     ),
                     labelText: "   Title",
                     border: OutlineInputBorder(
@@ -113,6 +115,8 @@ class _RequestDonationState extends State<RequestDonation> {
                     contentPadding: EdgeInsets.symmetric(vertical: 1),
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                     ),
                     labelText: "   Tags",
                     border: OutlineInputBorder(
@@ -137,7 +141,8 @@ class _RequestDonationState extends State<RequestDonation> {
                         'Quantity:',
                         style: TextStyle(
                           color: Color.fromRGBO(45, 12, 87, 1.0),
-                          fontFamily: 'poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           fontSize: 25,
                         ),
                       ),
@@ -146,7 +151,8 @@ class _RequestDonationState extends State<RequestDonation> {
                       '$_n',
                       style: TextStyle(
                         fontSize: 30,
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
+                        fontWeight: FontWeight.normal,
                         color: Color.fromRGBO(45, 12, 87, 1.0),
                       ),
                     ),
@@ -213,6 +219,8 @@ class _RequestDonationState extends State<RequestDonation> {
                   decoration: InputDecoration(
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                       height: 5,
                     ),
                     labelText: "Why do you need it ?",
@@ -229,6 +237,8 @@ class _RequestDonationState extends State<RequestDonation> {
                     contentPadding: EdgeInsets.symmetric(vertical: 1),
                     labelStyle: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                     ),
                     labelText: "   Name/Organization Name",
                     border: OutlineInputBorder(
@@ -259,7 +269,8 @@ class _RequestDonationState extends State<RequestDonation> {
                     'PUBLISH REQUEST',
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.w800,
                     ),
                   ),
                   onPressed: () {

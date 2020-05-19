@@ -15,7 +15,7 @@ class youractivitydone extends StatelessWidget {
             padding: EdgeInsets.only(left: 20, top: 50),
             child: Text("Your Activity",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: 'OpenSans',
                     color: Color(0xFF2D0C57),
                     fontSize: 30,
                     fontWeight: FontWeight.bold)),
@@ -35,7 +35,7 @@ class youractivitydone extends StatelessWidget {
                         children: <Widget>[
                           Text("Deliver To:",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Color(0xFF2D0C57),
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold)),
@@ -44,17 +44,17 @@ class youractivitydone extends StatelessWidget {
                           ),
                           Text("123-London Street, Delhi",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17)),
                           Text("Name",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17)),
                           Text("Object",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17)),
                         ],
@@ -80,12 +80,14 @@ class youractivitydone extends StatelessWidget {
                                             "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"),
                                         fit: BoxFit.cover)),
                               ),
-                              Text("Tomato",
-                                  style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      color: Color(0xFF2D0C57),
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w300)),
+                              Text(
+                                "Tomato",
+                                style: TextStyle(
+                                    fontFamily: 'OpenSans',
+                                    color: Color(0xFF2D0C57),
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w300),
+                              ),
                             ],
                           ),
                         ],

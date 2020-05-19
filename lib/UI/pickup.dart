@@ -43,7 +43,8 @@ class _PickUpState extends State<PickUp> {
               'Checkout',
               style: TextStyle(
                 color: Color.fromRGBO(45, 12, 87, 1),
-                fontFamily: 'poppins',
+                fontFamily: 'OpenSans',
+                fontWeight: FontWeight.w800,
               ),
             ),
           ],
@@ -65,7 +66,7 @@ class _PickUpState extends State<PickUp> {
                     'Pickup address',
                     style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontSize: 25,
                         fontWeight: FontWeight.bold),
                   ),
@@ -101,6 +102,8 @@ class _PickUpState extends State<PickUp> {
                     "Alexander Smith\nCross\nStreet\nstate",
                     style: TextStyle(
                       fontSize: 18,
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
                     ),
                     strutStyle: StrutStyle(
                       height: 1.5,
@@ -121,7 +124,7 @@ class _PickUpState extends State<PickUp> {
                     'Pickup options',
                     style: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
-                      fontFamily: 'poppins',
+                      fontFamily: 'OpenSans',
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
@@ -155,7 +158,8 @@ class _PickUpState extends State<PickUp> {
                       Text(
                         "I'll submit it up myself",
                         style: TextStyle(
-                          fontFamily: 'poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           fontSize: 20,
                         ),
                       ),
@@ -165,7 +169,8 @@ class _PickUpState extends State<PickUp> {
                       Text(
                         "By Courier",
                         style: TextStyle(
-                          fontFamily: 'poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           fontSize: 20,
                         ),
                       ),
@@ -224,7 +229,8 @@ class _PickUpState extends State<PickUp> {
                 'DONATE',
                 style: TextStyle(
                   color: Colors.white,
-                  fontFamily: 'Poppins',
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.w800,
                 ),
               ),
               onPressed: () {
@@ -242,8 +248,7 @@ class _PickUpState extends State<PickUp> {
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.history), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.add), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),

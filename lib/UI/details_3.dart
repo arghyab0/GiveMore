@@ -34,7 +34,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                 textAlign: TextAlign.left,
                 style: TextStyle(
                   color: Color.fromRGBO(45, 12, 87, 1.0),
-                  fontFamily: 'poppins',
+                  fontFamily: 'OpenSans',
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
                 ),
@@ -71,7 +71,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
                       ),
@@ -81,7 +81,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontSize: 15,
                       ),
                     ),
@@ -99,7 +99,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
                               ),
@@ -109,7 +109,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontSize: 15,
                               ),
                             ),
@@ -143,7 +143,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
                               ),
@@ -153,7 +153,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontSize: 15,
                               ),
                             ),
@@ -194,7 +194,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 25,
                           ),
                         ),
@@ -206,7 +206,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -218,7 +218,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -254,7 +254,7 @@ class _DetailsThreeState extends State<DetailsThree> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),

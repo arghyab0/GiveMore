@@ -37,7 +37,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                 textAlign: TextAlign.left,
                 style: TextStyle(
                   color: Color.fromRGBO(45, 12, 87, 1.0),
-                  fontFamily: 'poppins',
+                  fontFamily: 'OpenSans',
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
                 ),
@@ -78,7 +78,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
                       ),
@@ -109,7 +109,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
                               ),
@@ -119,7 +119,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontSize: 15,
                               ),
                               strutStyle: StrutStyle(
@@ -144,7 +144,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Color.fromRGBO(45, 12, 87, 1.0),
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
                               ),
@@ -154,7 +154,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
-                                fontFamily: 'poppins',
+                                fontFamily: 'OpenSans',
                                 fontSize: 15,
                               ),
                               strutStyle: StrutStyle(
@@ -186,7 +186,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 25,
                           ),
                         ),
@@ -198,7 +198,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Colors.grey,
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -210,7 +210,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Colors.grey,
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -246,7 +246,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
                             fontSize: 15,
                           ),
                         ),
@@ -273,7 +273,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                     'ACCEPT',
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'OpenSans',
                     ),
                   ),
                   onPressed: () {
@@ -294,7 +294,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                     'CANCEL',
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'OpenSans',
                     ),
                   ),
                   onPressed: () {},

@@ -90,30 +90,38 @@ class _categoriesState extends State<categories> {
               ),
               Container(
                 padding: EdgeInsets.only(left: 20),
-                child: Text("Categories",
-                    style: TextStyle(
-                        fontFamily: 'Poppins',
-                        color: Color(0xFF2D0C57),
-                        fontSize: 34,
-                        fontWeight: FontWeight.bold)),
+                child: Text(
+                  "Categories",
+                  style: TextStyle(
+                    fontFamily: 'OpenSans',
+                    color: Color(0xFF2D0C57),
+                    fontSize: 34,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
               Container(
                 height: 80,
                 padding: EdgeInsets.only(top: 30, right: 20, left: 20),
                 child: new TextFormField(
                   decoration: new InputDecoration(
-                      border: new OutlineInputBorder(
-                        borderRadius: const BorderRadius.all(
-                          const Radius.circular(50.0),
-                        ),
+                    border: new OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(
+                        const Radius.circular(50.0),
                       ),
-                      contentPadding: EdgeInsets.only(top: 10),
-                      filled: true,
-                      prefixIcon:
-                          new Icon(Icons.search, color: Color(0xFF2D0C57)),
-                      hintStyle: new TextStyle(color: Colors.grey[600]),
-                      hintText: "Search",
-                      fillColor: Colors.white70),
+                    ),
+                    contentPadding: EdgeInsets.only(top: 10),
+                    filled: true,
+                    prefixIcon:
+                        new Icon(Icons.search, color: Color(0xFF2D0C57)),
+                    hintStyle: new TextStyle(
+                      color: Colors.grey[600],
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.normal,
+                    ),
+                    hintText: "Search",
+                    fillColor: Colors.white70,
+                  ),
                 ),
               ),
               SizedBox(
@@ -162,10 +170,11 @@ class _categoriesState extends State<categories> {
                                 child: new Text(
                                   "  " + names[index],
                                   style: TextStyle(
-                                      fontFamily: 'Roboto',
-                                      color: Color(0xFF2D0C57),
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold),
+                                    fontFamily: 'OpenSans',
+                                    color: Color(0xFF2D0C57),
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w800,
+                                  ),
                                 ),
                               ),
                             ],

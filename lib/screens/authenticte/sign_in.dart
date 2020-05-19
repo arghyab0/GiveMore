@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:covidist/services/auth.dart';
 import 'package:covidist/shared/loading.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +59,7 @@ class _SignInState extends State<SignIn> {
                             style: TextStyle(
                               color: Color.fromRGBO(45, 12, 87, 1.0),
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'Poppins',
+                              fontFamily: 'OpenSans',
                               fontSize: 34,
                             ),
                           ),
@@ -80,6 +82,8 @@ class _SignInState extends State<SignIn> {
                           contentPadding: EdgeInsets.symmetric(vertical: 1),
                           labelText: "   Email",
                           labelStyle: TextStyle(
+                            fontFamily: 'OpenSans',
+                            fontWeight: FontWeight.normal,
                             color: Color.fromRGBO(45, 12, 87, 1.0),
                           ),
                           border: OutlineInputBorder(
@@ -98,6 +102,8 @@ class _SignInState extends State<SignIn> {
                           contentPadding: EdgeInsets.symmetric(vertical: 1),
                           labelText: "   Password",
                           labelStyle: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                             color: Color.fromRGBO(45, 12, 87, 1.0),
                           ),
                           border: OutlineInputBorder(
@@ -127,7 +133,8 @@ class _SignInState extends State<SignIn> {
                           'LOG IN',
                           style: TextStyle(
                             color: Colors.white,
-                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w800,
+                            fontFamily: 'OpenSans',
                           ),
                         ),
                         onPressed: () async {
@@ -170,7 +177,8 @@ class _SignInState extends State<SignIn> {
                           'CREATE AN ACCOUNT',
                           style: TextStyle(
                             color: Color.fromRGBO(11, 206, 131, 1),
-                            fontFamily: 'poppins',
+                            fontFamily: 'OpenSans',
+                            fontWeight: FontWeight.w800,
                           ),
                         ),
                         onPressed: () {

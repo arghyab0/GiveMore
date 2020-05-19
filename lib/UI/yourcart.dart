@@ -39,12 +39,14 @@ class YourCart extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(left: 20),
-            child: Text("Your Cart",
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    color: Color(0xFF2D0C57),
-                    fontSize: 34,
-                    fontWeight: FontWeight.bold)),
+            child: Text(
+              "Your Cart",
+              style: TextStyle(
+                  fontFamily: 'OpenSans',
+                  color: Color(0xFF2D0C57),
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
           Expanded(
             child: ListView.builder(
@@ -83,9 +85,10 @@ class YourCart extends StatelessWidget {
                             child: Text(
                               names[position],
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
+                                  fontWeight: FontWeight.normal,
                                   color: Color.fromRGBO(45, 12, 87, 1.0),
-                                  fontSize: 25),
+                                  fontSize: 22),
                             ),
                           ),
                           Container(
@@ -94,9 +97,10 @@ class YourCart extends StatelessWidget {
                             child: Text(
                               'Quantity: 2',
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'OpenSans',
+                                  fontWeight: FontWeight.normal,
                                   color: Colors.grey,
-                                  fontSize: 17),
+                                  fontSize: 16),
                             ),
                           ),
                         ],

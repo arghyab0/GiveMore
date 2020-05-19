@@ -42,7 +42,7 @@ class Thanks extends StatelessWidget {
                     Text(
                       "Thank You for",
                       style: TextStyle(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'OpenSans',
                           color: Color(0xFF2D0C57),
                           fontSize: 34,
                           fontWeight: FontWeight.bold),
@@ -50,7 +50,7 @@ class Thanks extends StatelessWidget {
                     Text(
                       "your service!",
                       style: TextStyle(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'OpenSans',
                           color: Color(0xFF2D0C57),
                           fontSize: 34,
                           fontWeight: FontWeight.bold),
@@ -61,7 +61,8 @@ class Thanks extends StatelessWidget {
                     Text(
                       con,
                       style: TextStyle(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           color: Color(0xFF9586A8),
                           fontSize: 17),
                       textAlign: TextAlign.center,
@@ -75,18 +76,25 @@ class Thanks extends StatelessWidget {
                         width: 320,
                         height: 50,
                         child: FlatButton(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          color: Color(0xFF0BCE83),
+                          padding: EdgeInsets.all(8.0),
+                          onPressed: () {
+                            Navigator.of(context).pushNamedAndRemoveUntil(
+                                '/youactivity',
+                                (Route<dynamic> route) => false);
+                          },
+                          child: Text(
+                            "BACK TO ACTIVITY",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'OpenSans',
+                              fontWeight: FontWeight.w800,
                             ),
-                            color: Color(0xFF0BCE83),
-                            padding: EdgeInsets.all(8.0),
-                            onPressed: () {
-                              Navigator.of(context).pushNamedAndRemoveUntil(
-                                  '/youactivity',
-                                  (Route<dynamic> route) => false);
-                            },
-                            child: Text("BACK TO ACTIVITY",
-                                style: TextStyle(color: Colors.white))),
+                          ),
+                        ),
                       ),
                     ),
                     SizedBox(

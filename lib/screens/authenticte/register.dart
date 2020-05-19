@@ -59,7 +59,7 @@ class _RegisterState extends State<Register> {
                             textAlign: TextAlign.left,
                             style: TextStyle(
                               color: Color.fromRGBO(45, 12, 87, 1.0),
-                              fontFamily: 'poppins',
+                              fontFamily: 'OpenSans',
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
                             ),
@@ -74,6 +74,8 @@ class _RegisterState extends State<Register> {
                           contentPadding: EdgeInsets.symmetric(vertical: 1),
                           labelStyle: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                           ),
                           labelText: "   Name",
                           border: OutlineInputBorder(
@@ -95,6 +97,8 @@ class _RegisterState extends State<Register> {
                           contentPadding: EdgeInsets.symmetric(vertical: 1),
                           labelStyle: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                           ),
                           labelText: "   Email",
                           border: OutlineInputBorder(
@@ -115,6 +119,8 @@ class _RegisterState extends State<Register> {
                           contentPadding: EdgeInsets.symmetric(vertical: 1),
                           labelStyle: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                           ),
                           labelText: "   Password",
                           border: OutlineInputBorder(
@@ -144,6 +150,8 @@ class _RegisterState extends State<Register> {
                           contentPadding: EdgeInsets.symmetric(vertical: 1),
                           labelStyle: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                           ),
                           labelText: "   Phone Number",
                           border: OutlineInputBorder(
@@ -167,6 +175,8 @@ class _RegisterState extends State<Register> {
                         decoration: InputDecoration(
                           labelStyle: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                             height: 5,
                           ),
                           labelText: "Address",
@@ -193,7 +203,8 @@ class _RegisterState extends State<Register> {
                           'SIGN UP',
                           style: TextStyle(
                             color: Colors.white,
-                            fontFamily: 'poppins',
+                            fontWeight: FontWeight.w800,
+                            fontFamily: 'OpenSans',
                           ),
                         ),
                         onPressed: () async {
@@ -228,14 +239,15 @@ class _RegisterState extends State<Register> {
                           ),
                         ),
                         padding:
-                            EdgeInsets.symmetric(horizontal: 130, vertical: 15),
+                            EdgeInsets.symmetric(horizontal: 130, vertical: 14),
                         focusElevation: 10,
                         color: Colors.white,
                         child: Text(
                           'LOG IN',
                           style: TextStyle(
                             color: Color.fromRGBO(11, 206, 131, 1),
-                            fontFamily: 'poppins',
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'OpenSans',
                           ),
                         ),
                         onPressed: () {

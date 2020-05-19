@@ -82,9 +82,9 @@ class _CheckOutState extends State<CheckOut> {
             Text(
               'Checkout',
               style: TextStyle(
-                color: Color.fromRGBO(45, 12, 87, 1),
-                fontFamily: 'poppins',
-              ),
+                  color: Color.fromRGBO(45, 12, 87, 1),
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.w800),
             ),
           ],
         ),
@@ -103,7 +103,7 @@ class _CheckOutState extends State<CheckOut> {
                     'Delivery address',
                     style: TextStyle(
                         color: Color.fromRGBO(45, 12, 87, 1.0),
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontSize: 25,
                         fontWeight: FontWeight.bold),
                   ),
@@ -113,6 +113,7 @@ class _CheckOutState extends State<CheckOut> {
                       'CHANGE',
                       style: TextStyle(
                         color: Color.fromRGBO(114, 3, 255, 1),
+                        fontWeight: FontWeight.normal,
                       ),
                     ),
                   ),
@@ -141,6 +142,8 @@ class _CheckOutState extends State<CheckOut> {
                         'Alexander Smith\nCross\nStreet\nstate',
                         style: TextStyle(
                           fontSize: 18,
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                         ),
                         strutStyle: StrutStyle(
                           height: 1.5,
@@ -164,7 +167,7 @@ class _CheckOutState extends State<CheckOut> {
                     'Delivery options',
                     style: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
-                      fontFamily: 'poppins',
+                      fontFamily: 'OpenSans',
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
@@ -198,7 +201,8 @@ class _CheckOutState extends State<CheckOut> {
                       Text(
                         "I'll submit it up myself",
                         style: TextStyle(
-                          fontFamily: 'poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           fontSize: 20,
                         ),
                       ),
@@ -208,7 +212,8 @@ class _CheckOutState extends State<CheckOut> {
                       Text(
                         "By Courier",
                         style: TextStyle(
-                          fontFamily: 'poppins',
+                          fontFamily: 'OpenSans',
+                          fontWeight: FontWeight.normal,
                           fontSize: 20,
                         ),
                       ),
@@ -306,8 +311,8 @@ class _CheckOutState extends State<CheckOut> {
                     "Non-contact-delivery",
                     style: TextStyle(
                       color: Color.fromRGBO(45, 12, 87, 1.0),
+                      fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'poppins',
                       fontSize: 20,
                     ),
                   ),
@@ -339,7 +344,8 @@ class _CheckOutState extends State<CheckOut> {
                 'REQUEST',
                 style: TextStyle(
                   color: Colors.white,
-                  fontFamily: 'Poppins',
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.w800,
                 ),
               ),
               onPressed: () {
