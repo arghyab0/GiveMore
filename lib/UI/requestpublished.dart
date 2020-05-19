@@ -15,7 +15,7 @@ class requestpublished extends StatelessWidget {
           Column(
             children: <Widget>[
               SizedBox(
-                height: 300,
+                height: 320,
               ),
               Container(
                 alignment: Alignment.bottomCenter,
@@ -79,6 +79,9 @@ class requestpublished extends StatelessWidget {
                             child: Text("BACK TO HOME",
                                 style: TextStyle(color: Colors.white))),
                       ),
+                    ),
+                    SizedBox(
+                      height: 70,
                     ),
                   ],
                 ),

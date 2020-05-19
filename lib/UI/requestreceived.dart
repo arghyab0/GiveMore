@@ -15,7 +15,7 @@ class RequestReceived extends StatelessWidget {
           Column(
             children: <Widget>[
               SizedBox(
-                height: 300,
+                height: 340,
               ),
               Container(
                 alignment: Alignment.bottomCenter,
@@ -30,7 +30,7 @@ class RequestReceived extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       width: 80,
-                      height: 80,
+                      height: 90,
                       margin: EdgeInsets.only(top: 15),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
@@ -68,19 +68,25 @@ class RequestReceived extends StatelessWidget {
                         width: 320,
                         height: 50,
                         child: FlatButton(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                            color: Color(0xFF0BCE83),
-                            padding: EdgeInsets.all(8.0),
-                            onPressed: () {
-                              Navigator.of(context).pushNamedAndRemoveUntil(
-                                  '/nonContactdelivery',
-                                  (Route<dynamic> route) => false);
-                            },
-                            child: Text("BACK TO HOME",
-                                style: TextStyle(color: Colors.white))),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          color: Color(0xFF0BCE83),
+                          padding: EdgeInsets.all(8.0),
+                          onPressed: () {
+                            Navigator.of(context).pushNamedAndRemoveUntil(
+                                '/nonContactdelivery',
+                                (Route<dynamic> route) => false);
+                          },
+                          child: Text(
+                            "BACK TO HOME",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                       ),
+                    ),
+                    SizedBox(
+                      height: 40,
                     ),
                   ],
                 ),

@@ -17,17 +17,18 @@ class donationlisted extends StatelessWidget {
           Column(
             children: <Widget>[
               SizedBox(
-                height: 300,
+                height: 350,
               ),
               Container(
                 alignment: Alignment.bottomCenter,
                 padding: EdgeInsets.only(top: 10, left: 20, right: 20),
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(50),
-                        topRight: Radius.circular(50)),
-                    //borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                    color: Color.fromRGBO(246, 245, 245, 1)),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      topRight: Radius.circular(50)),
+                  //borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                  color: Color.fromRGBO(246, 245, 245, 1),
+                ),
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -84,6 +85,9 @@ class donationlisted extends StatelessWidget {
                           ),
                         ),
                       ),
+                    ),
+                    SizedBox(
+                      height: 40,
                     ),
                   ],
                 ),

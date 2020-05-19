@@ -109,20 +109,20 @@ class _NewDonationState extends State<NewDonation> {
                         style: TextStyle(
                           color: Color.fromRGBO(45, 12, 87, 1.0),
                           fontFamily: 'poppins',
-                          fontSize: 30,
+                          fontSize: 25,
                         ),
                       ),
                     ),
                     Text(
                       '$_n',
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 30,
                         fontFamily: 'poppins',
                         color: Color.fromRGBO(45, 12, 87, 1.0),
                       ),
                     ),
                     SizedBox(
-                      width: 10,
+                      width: 30,
                     ),
                     Expanded(
                       child: Center(

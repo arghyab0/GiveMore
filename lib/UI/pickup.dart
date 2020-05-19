@@ -1,5 +1,6 @@
 import 'package:covidist/UI/Requests.dart';
 import 'package:covidist/UI/donationlisted.dart';
+import 'package:covidist/UI/yourcart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -129,69 +130,79 @@ class _PickUpState extends State<PickUp> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Icon(
-                    Icons.directions_walk,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Icon(
+                        Icons.directions_walk,
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Icon(
+                        Icons.directions_bike,
+                      ),
+                    ],
                   ),
-                  Text(
-                    "I'll submit it up myself",
-                    style: TextStyle(
-                      fontFamily: 'poppins',
-                      fontSize: 20,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "I'll submit it up myself",
+                        style: TextStyle(
+                          fontFamily: 'poppins',
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        "By Courier",
+                        style: TextStyle(
+                          fontFamily: 'poppins',
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
                   ),
-                  Radio(
-                    value: SingingCharecter.pickup,
-                    groupValue: _charecter,
-                    activeColor: Color.fromRGBO(114, 3, 255, 1),
-                    onChanged: (SingingCharecter value) {
-                      setState(
-                        () {
-                          _charecter = value;
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Radio(
+                        value: SingingCharecter.pickup,
+                        groupValue: _charecter,
+                        activeColor: Color.fromRGBO(114, 3, 255, 1),
+                        onChanged: (SingingCharecter value) {
+                          setState(
+                            () {
+                              _charecter = value;
+                            },
+                          );
                         },
-                      );
-                    },
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: <Widget>[
-                  SizedBox(
-                    width: 35,
-                  ),
-                  Icon(
-                    Icons.directions_bike,
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Text(
-                    "By Courier",
-                    style: TextStyle(
-                      fontFamily: 'poppins',
-                      fontSize: 20,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 135,
-                  ),
-                  Radio(
-                    value: SingingCharecter.courier,
-                    groupValue: _charecter,
-                    activeColor: Color.fromRGBO(114, 3, 255, 1),
-                    onChanged: (SingingCharecter value) {
-                      setState(
-                        () {
-                          _charecter = value;
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Radio(
+                        value: SingingCharecter.courier,
+                        groupValue: _charecter,
+                        activeColor: Color.fromRGBO(114, 3, 255, 1),
+                        onChanged: (SingingCharecter value) {
+                          setState(
+                            () {
+                              _charecter = value;
+                            },
+                          );
                         },
-                      );
-                    },
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -227,13 +238,12 @@ class _PickUpState extends State<PickUp> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 1,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart), title: Text("")),
+              icon: Icon(Icons.history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.add), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),
@@ -244,8 +254,8 @@ class _PickUpState extends State<PickUp> {
 }
 
 moveto(index, cont) {
-  if (index == 0) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => categories()));
+  if (index == 1) {
+    Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
   } else if (index == 2) {
     Navigator.push(
         cont, MaterialPageRoute(builder: (context) => NewDonation()));

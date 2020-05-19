@@ -138,7 +138,7 @@ class _CheckOutState extends State<CheckOut> {
                   Row(
                     children: <Widget>[
                       Text(
-                        'address',
+                        'Alexander Smith\nCross\nStreet\nstate',
                         style: TextStyle(
                           fontSize: 18,
                         ),
@@ -177,65 +177,75 @@ class _CheckOutState extends State<CheckOut> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Icon(
-                    Icons.directions_walk,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Icon(
+                        Icons.directions_walk,
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Icon(
+                        Icons.directions_bike,
+                      ),
+                    ],
                   ),
-                  Text(
-                    "I'll submit it up myself",
-                    style: TextStyle(
-                      fontFamily: 'poppins',
-                      fontSize: 20,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "I'll submit it up myself",
+                        style: TextStyle(
+                          fontFamily: 'poppins',
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        "By Courier",
+                        style: TextStyle(
+                          fontFamily: 'poppins',
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
                   ),
-                  Radio(
-                    value: SingingCharecter.pickup,
-                    groupValue: _charecter,
-                    activeColor: Color.fromRGBO(114, 3, 255, 1),
-                    onChanged: (SingingCharecter value) {
-                      setState(
-                        () {
-                          _charecter = value;
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Radio(
+                        value: SingingCharecter.pickup,
+                        groupValue: _charecter,
+                        activeColor: Color.fromRGBO(114, 3, 255, 1),
+                        onChanged: (SingingCharecter value) {
+                          setState(
+                            () {
+                              _charecter = value;
+                            },
+                          );
                         },
-                      );
-                    },
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: <Widget>[
-                  SizedBox(
-                    width: 35,
-                  ),
-                  Icon(
-                    Icons.directions_bike,
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Text(
-                    "By Courier",
-                    style: TextStyle(
-                      fontFamily: 'poppins',
-                      fontSize: 20,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 129,
-                  ),
-                  Radio(
-                    value: SingingCharecter.courier,
-                    groupValue: _charecter,
-                    activeColor: Color.fromRGBO(114, 3, 255, 1),
-                    onChanged: (SingingCharecter value) {
-                      setState(
-                        () {
-                          _charecter = value;
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Radio(
+                        value: SingingCharecter.courier,
+                        groupValue: _charecter,
+                        activeColor: Color.fromRGBO(114, 3, 255, 1),
+                        onChanged: (SingingCharecter value) {
+                          setState(
+                            () {
+                              _charecter = value;
+                            },
+                          );
                         },
-                      );
-                    },
+                      ),
+                    ],
                   ),
                 ],
               ),
