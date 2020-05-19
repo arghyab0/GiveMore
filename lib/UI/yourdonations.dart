@@ -39,7 +39,7 @@ class YourCart extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(left: 20),
-            child: Text("Your Cart",
+            child: Text("Your Donations",
                 style: TextStyle(
                     fontFamily: 'Poppins',
                     color: Color(0xFF2D0C57),
@@ -117,7 +117,7 @@ class YourCart extends StatelessWidget {
         selectedItemColor: Color.fromRGBO(114, 3, 255, 0.5),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), title: Text("")),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.history), title: Text("")),
           BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("")),
         ],
         onTap: (int index) => moveto(index, context),
