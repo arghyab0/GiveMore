@@ -37,7 +37,8 @@ class noncontactdelivery extends StatelessWidget {
                       height: 70,
                       width: 70,
                       child: FloatingActionButton(
-                        backgroundColor: Color(0xFF2D0C57),
+                        backgroundColor: Color(0xFF524236),
+                        
                         child: Image.asset(
                           'assets/bot.png',
                           fit: BoxFit.cover,
@@ -52,9 +53,9 @@ class noncontactdelivery extends StatelessWidget {
                   alignment: Alignment.topRight,
                   padding: EdgeInsets.only(right: 20),
                   child: Container(
-                    width: 55,
-                    height: 55,
-                    margin: EdgeInsets.only(top: 60, left: 220),
+                    width: 65,
+                    height: 65,
+                    margin: EdgeInsets.only(top: 65, left: 220),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(50.0)),
                         color: Color(0xff524236)),
