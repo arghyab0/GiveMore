@@ -18,6 +18,7 @@ import 'package:covidist/UI/thanks.dart';
 import 'package:covidist/UI/vegetable.dart';
 import 'package:covidist/UI/yourcart.dart';
 import 'package:covidist/screens/authenticte/authenticate.dart';
+import 'package:covidist/screens/authenticte/distregister.dart';
 import 'package:covidist/screens/wrapper.dart';
 import 'package:covidist/services/auth.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => Wrapper(),
+          '/distregister': (context) => DistRegister(),
           '/checkout': (context) => CheckOut(),
           '/newDonation': (context) => NewDonation(),
           '/pickup': (context) => PickUp(),
@@ -54,7 +56,7 @@ class MyApp extends StatelessWidget {
           '/requestreceived': (context) => RequestReceived(),
           '/requests': (context) => Requests(),
           '/vegetables': (context) => vegetable(),
-          '/youactivity': (context) => youractivity(),
+          '/youractivity': (context) => youractivity(),
           '/youractivitydone': (context) => youractivitydone(),
           '/thanks': (context) => Thanks(),
           '/yourcart': (context) => YourCart(),

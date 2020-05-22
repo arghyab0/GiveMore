@@ -1,4 +1,5 @@
 import 'package:covidist/UI/YourActivitydone.dart';
+import 'package:covidist/screens/authenticte/distregister.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,28 @@ class youractivity extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          // Container(
+          //   alignment: Alignment.topRight,
+          //   padding: EdgeInsets.only(right: 10),
+          //   child: Container(
+          //     width: 50,
+          //     height: 50,
+          //     margin: EdgeInsets.only(top: 60, left: 220),
+          //     decoration: BoxDecoration(
+          //         borderRadius: BorderRadius.all(Radius.circular(50.0)),
+          //         color: Color(0xff524236)),
+          //     child: new IconButton(
+          //       icon: new Icon(
+          //         Icons.person_outline,
+          //         color: Colors.white,
+          //         size: 35,
+          //       ),
+          //       onPressed: () async {
+          //         Navigator.of(context).pop();
+          //       },
+          //     ),
+          //   ),
+          // ),
           Container(
             padding: EdgeInsets.only(left: 20, top: 50),
             child: Text("Your Activity",
@@ -141,7 +164,7 @@ moveto(index, cont) {
     Navigator.push(
         cont, MaterialPageRoute(builder: (context) => youractivitydone()));
   } else if (index == 2) {
-    // Navigator.push(
-    //     cont, MaterialPageRoute(builder: (context) => NewDonation()));
+    Navigator.pop(
+        cont, MaterialPageRoute(builder: (context) => DistRegister()));
   }
 }

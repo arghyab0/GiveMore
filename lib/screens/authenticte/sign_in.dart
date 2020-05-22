@@ -116,7 +116,7 @@ class _SignInState extends State<SignIn> {
                         },
                       ),
                       SizedBox(
-                        height: 100,
+                        height: 80,
                       ),
                       RaisedButton(
                         shape: RoundedRectangleBorder(
@@ -185,6 +185,21 @@ class _SignInState extends State<SignIn> {
                           widget.toggleView();
                         },
                       ),
+                      SizedBox(height: 30,),
+
+                      FlatButton(
+                        child: Text(
+                          'REGISTER AS A DISTRIBUTER',
+                          style: TextStyle(
+                            color: Color.fromRGBO(11, 206, 131, 1),
+                            fontFamily: 'OpenSans',
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/distregister');
+                        },
+                      )
                     ],
                   ),
                 ),
