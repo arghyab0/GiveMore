@@ -3,6 +3,7 @@ import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/new_donation.dart';
 import 'package:covidist/UI/request_donation.dart';
 import 'package:covidist/UI/vegetable.dart';
+import 'package:covidist/UI/yourcart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -207,7 +208,7 @@ class _categoriesState extends State<categories> {
 
 moveto(index, cont) {
   if (index == 1) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => CheckOut()));
+    Navigator.push(cont, MaterialPageRoute(builder: (context) => YourCart()));
   } else if (index == 2) {
     Navigator.push(
       cont,

@@ -1,4 +1,6 @@
 import 'package:covidist/UI/checkout.dart';
+import 'package:covidist/UI/pickup.dart';
+import 'package:covidist/UI/yourdonations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -107,10 +109,10 @@ class requestlisted extends StatelessWidget {
                                   color: Color(0xFF0BCE83),
                                   padding: EdgeInsets.all(8.0),
                                   onPressed: () {
-//                                Navigator.push(
-//                                    context,
-//                                    MaterialPageRoute(
-//                                        builder: (context) => Done()));
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => PickUp()));
                                   },
                                   child: Text(
                                     "    DONATE",
@@ -154,6 +156,7 @@ moveto(index, cont) {
   if (index == 0) {
     Navigator.push(cont, MaterialPageRoute(builder: (context) => Requests()));
   } else if (index == 1) {
-    Navigator.push(cont, MaterialPageRoute(builder: (context) => CheckOut()));
+    Navigator.push(
+        cont, MaterialPageRoute(builder: (context) => YourDonation()));
   }
 }
