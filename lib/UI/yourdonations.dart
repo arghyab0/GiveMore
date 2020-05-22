@@ -92,7 +92,7 @@ class YourDonation extends StatelessWidget {
                             alignment: Alignment.topLeft,
                             padding: EdgeInsets.only(top: 10, left: 200),
                             child: Text(
-                              'Quantity: 2',
+                              'Quantity: 1',
                               style: TextStyle(
                                   fontFamily: 'Poppins',
                                   color: Colors.grey,

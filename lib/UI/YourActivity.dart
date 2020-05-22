@@ -4,6 +4,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class youractivity extends StatelessWidget {
+var type_del=["PickUp From:", "Deliver To:", "Deliver To:", "PickUp From:", "PickUp From:"];
+var location=["Himayat Nagar, Kolkata","Airport Road, Kolkata", "Airport Road, Kolkata", "Lake Gardens, Kolkata", "Nazeerabad, Kolakata"];
+var names=["Padmini Singh","Arghya Biswas","Arghya Biswas","Ganga Nair","Gaurav S"];
+var obj= ["Potato","Milk","Bread","Rice","Watermelon"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,10 +40,11 @@ class youractivity extends StatelessWidget {
           // ),
           Container(
             padding: EdgeInsets.only(left: 20, top: 50),
-            child: Text("Your Activity",
+            child: Text("Checklist",
                 style: TextStyle(
                     fontFamily: 'OpenSans',
                     fontSize: 30,
+                    color:Color(0xFF2D0C57) ,
                     fontWeight: FontWeight.bold)),
           ),
           Expanded(
@@ -54,7 +60,7 @@ class youractivity extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Pickup from:",
+                          Text(type_del[position],
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Color(0xFF2D0C57),
@@ -63,19 +69,19 @@ class youractivity extends StatelessWidget {
                           SizedBox(
                             height: 10,
                           ),
-                          Text("  123-London Street, Delhi",
+                          Text(location[position],
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
-                          Text("  Name",
+                          Text(names[position],
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400)),
-                          Text("  Object",
+                          Text(obj[position],
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Colors.grey,
@@ -139,6 +145,7 @@ class youractivity extends StatelessWidget {
               },
             ),
           ),
+
 
           ////////////////////////////
         ],

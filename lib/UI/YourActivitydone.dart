@@ -4,6 +4,13 @@ import 'package:flutter/material.dart';
 import 'YourActivity.dart';
 
 class youractivitydone extends StatelessWidget {
+  var location=["Airport Road, Kolkata", "Lake Gardens, Kolkata", "Nazeerabad, Kolakata"];
+  var names=["Padmini Singh","Arghya Biswas","Ganga Nair","Gaurav S"];
+  var links=["https://images.unsplash.com/photo-1563114773-84221bd62daa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+  "https://images.unsplash.com/photo-1520467795206-62e33627e6ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+  "https://images.unsplash.com/photo-1457386335663-6115e304bd29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"];
+  var obj=["Watermelon","Books","Muesli"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +19,7 @@ class youractivitydone extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            padding: EdgeInsets.only(left: 20, top: 50),
+            padding: EdgeInsets.only(left: 20, top: 60),
             child: Text("Your Activity",
                 style: TextStyle(
                     fontFamily: 'OpenSans',
@@ -22,7 +29,7 @@ class youractivitydone extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: 5,
+              itemCount: 3,
               itemBuilder: (context, position) {
                 return Card(
                   elevation: 0,
@@ -33,7 +40,7 @@ class youractivitydone extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Deliver To:",
+                          Text("Delivered To:",
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Color(0xFF2D0C57),
@@ -42,21 +49,17 @@ class youractivitydone extends StatelessWidget {
                           SizedBox(
                             height: 10,
                           ),
-                          Text("123-London Street, Delhi",
+                          Text(location[position],
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17)),
-                          Text("Name",
+                          Text(names[position],
                               style: TextStyle(
                                   fontFamily: 'OpenSans',
                                   color: Colors.grey,
                                   fontSize: 17)),
-                          Text("Object",
-                              style: TextStyle(
-                                  fontFamily: 'OpenSans',
-                                  color: Colors.grey,
-                                  fontSize: 17)),
+                        
                         ],
                       ),
                       //Divider(color: Colors.black,height: 200,),
@@ -77,11 +80,11 @@ class youractivitydone extends StatelessWidget {
                                         BorderRadius.all(Radius.circular(10.0)),
                                     image: DecorationImage(
                                         image: NetworkImage(
-                                            "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"),
+                                            links[position]),
                                         fit: BoxFit.cover)),
                               ),
                               Text(
-                                "Tomato",
+                                obj[position],
                                 style: TextStyle(
                                     fontFamily: 'OpenSans',
                                     color: Color(0xFF2D0C57),
@@ -93,7 +96,7 @@ class youractivitydone extends StatelessWidget {
                         ],
                       ),
                       Container(
-                          padding: EdgeInsets.only(top: 120),
+                          padding: EdgeInsets.only(top: 100),
                           child: Divider(
                             color: Colors.black,
                           ))

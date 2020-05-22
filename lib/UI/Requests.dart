@@ -18,6 +18,8 @@ class Requests extends StatelessWidget {
     "https://images.unsplash.com/photo-1425543103986-22abb7d7e8d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "https://images.unsplash.com/uploads/141143339879512fe9b0d/f72e2c85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
   ];
+
+  var name_list=["Ganga Nair", "Padmini Singh", "Avhaan Foundation", "Joining Hands Org"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +48,7 @@ class Requests extends StatelessWidget {
               Container(
                 width: 55,
                 height: 55,
-                margin: EdgeInsets.only(top: 45, left: 260),
+                margin: EdgeInsets.only(top: 55, left: 280),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(50.0)),
                     color: Color(0xff524236)),
@@ -115,7 +117,9 @@ class Requests extends StatelessWidget {
                         alignment: Alignment.topRight,
                         padding: EdgeInsets.only(right: 20),
                         child: Text(
-                          "Personal /Orag Name",
+                          name_list[
+                            position
+                          ],
                           style: TextStyle(
                               fontFamily: 'OpenSans',
                               fontWeight: FontWeight.normal,

@@ -1,10 +1,9 @@
 import 'package:covidist/UI/checkout.dart';
-import 'package:covidist/UI/pickup.dart';
-import 'package:covidist/UI/yourdonations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'Requests.dart';
+import 'pickup.dart';
 
 class requestlisted extends StatelessWidget {
   var names = ["Tomato", "Lettuce", "Potato"];
@@ -14,6 +13,7 @@ class requestlisted extends StatelessWidget {
     "https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
   ];
 
+var name_list=["Ganga Nair", "Padmini Singh", "Avhaan Foundation", "Joining Hands Org"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -86,7 +86,8 @@ class requestlisted extends StatelessWidget {
                       Container(
                         alignment: Alignment.topRight,
                         padding: EdgeInsets.only(top: 10, right: 10),
-                        child: Text("Personal /Orag Name",
+                        child: Text(
+                          name_list[position],
                             style: TextStyle(
                                 fontFamily: 'OpenSans',
                                 fontWeight: FontWeight.normal,
@@ -109,10 +110,11 @@ class requestlisted extends StatelessWidget {
                                   color: Color(0xFF0BCE83),
                                   padding: EdgeInsets.all(8.0),
                                   onPressed: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => PickUp()));
+                               Navigator.push(
+                                   context,
+                                   MaterialPageRoute(
+                                       builder: (context) => PickUp()
+                               ));
                                   },
                                   child: Text(
                                     "    DONATE",
@@ -156,7 +158,6 @@ moveto(index, cont) {
   if (index == 0) {
     Navigator.push(cont, MaterialPageRoute(builder: (context) => Requests()));
   } else if (index == 1) {
-    Navigator.push(
-        cont, MaterialPageRoute(builder: (context) => YourDonation()));
+    Navigator.push(cont, MaterialPageRoute(builder: (context) => CheckOut()));
   }
 }

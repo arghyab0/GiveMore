@@ -100,7 +100,7 @@ class _PickUpState extends State<PickUp> {
                     width: 25,
                   ),
                   Text(
-                    "Alexander Smith\nCross\nStreet\nstate",
+                    "Arghya Biswas\nFlat No. 402, Conclave Heights\nMG Road\nKolakata",
                     style: TextStyle(
                       fontSize: 18,
                       fontFamily: 'OpenSans',

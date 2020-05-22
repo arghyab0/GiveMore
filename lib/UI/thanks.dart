@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class Thanks extends StatelessWidget {
-  String con = 'Thank you for being a voulentear in this time of need ';
+  String con = 'Thank you for being a volunteer in this time of need! ';
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,7 @@ class Thanks extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           onPressed: () {
                             Navigator.of(context).pushNamedAndRemoveUntil(
-                                '/youactivity',
+                                '/youractivity',
                                 (Route<dynamic> route) => false);
                           },
                           child: Text(

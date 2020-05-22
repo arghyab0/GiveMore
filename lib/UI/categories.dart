@@ -3,9 +3,10 @@ import 'package:covidist/UI/checkout.dart';
 import 'package:covidist/UI/new_donation.dart';
 import 'package:covidist/UI/request_donation.dart';
 import 'package:covidist/UI/vegetable.dart';
-import 'package:covidist/UI/yourcart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'yourcart.dart';
 
 class categories extends StatefulWidget {
   @override

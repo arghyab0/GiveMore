@@ -84,11 +84,11 @@ class _DetailsTwoState extends State<DetailsTwo> {
                       ),
                     ),
                     Text(
-                      "Alexander Smith\nCross\nStreet",
+                      "Lakdikapul\nKolkata",
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Colors.grey,
-                        fontFamily: 'poppins',
+                        fontFamily: 'OpenSans',
                         fontSize: 15,
                       ),
                       strutStyle: StrutStyle(
@@ -115,7 +115,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               ),
                             ),
                             Text(
-                              "Alexander Smith\nCross\nStreet",
+                              "RPC Layout\nKolkata",
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -150,7 +150,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                               ),
                             ),
                             Text(
-                              "Alexander Smith\nCross\nStreet",
+                              "Airport Road\nKolkata",
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -194,7 +194,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           height: 10,
                         ),
                         Text(
-                          'Name',
+                          'Arghya Biswas',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Colors.grey,
@@ -206,7 +206,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                           height: 10,
                         ),
                         Text(
-                          '1234567890',
+                          '6573827463',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Colors.grey,
@@ -218,7 +218,7 @@ class _DetailsTwoState extends State<DetailsTwo> {
                     ),
                   ),
                   SizedBox(
-                    width: 50,
+                    width: 80,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -236,13 +236,13 @@ class _DetailsTwoState extends State<DetailsTwo> {
                                 BorderRadius.all(Radius.circular(10.0)),
                             image: DecorationImage(
                                 image: NetworkImage(
-                                  'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1062&q=80',
+                                  'https://images.unsplash.com/photo-1556471013-0001958d2f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=823&q=80',
                                 ),
                                 fit: BoxFit.cover),
                           ),
                         ),
                         Text(
-                          'Coffee',
+                          'Bread',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             color: Color.fromRGBO(45, 12, 87, 1.0),

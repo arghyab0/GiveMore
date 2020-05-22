@@ -26,12 +26,11 @@ class Wrapper extends StatelessWidget {
 
     //return either home or authenticate
 
-    if (user == null) {
-      return Authenticate();
-    } else {
-      return noncontactdelivery();
-    }
-    // return youractivity();
+    // if (user == null) {
+    //   return Authenticate();
+    // } else {
+    //   return noncontactdelivery();
+    // }
+    return noncontactdelivery();
   }
 }
-
