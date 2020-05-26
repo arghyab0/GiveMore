@@ -1,16 +1,6 @@
-# covidist
+# GiveMore
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The impact of COVID-19 pandemic has been largely disruptive. The World Bank and rating agencies had initially downgraded India's growth for fiscal year 2021 with the lowest figures India has seen in three decades since India's economic liberalization in the 1990s. This prototype is a donation-based marketplace for essential supplies that focuses on community cooperation. Through our mobile application donors can donate surplus supplies they have to the financially underprivileged, medical workers and also NGOs and hospitals. Our mobile application is built using the Flutter framework for cross-platform support and we have used Firebase for backend services.
+The COVID-19 crisis caused millions of people to lose their jobs overnight and unemployment rose from 6.7% on 15 March to 26% on 19 April. To provide temporary employment, we have distributors picking up these supplies from donors and delivering them to the donees. Such a move allows us to create opportunities for the unemployed and also respect principles like social distancing. 
+All the supplies collected from the donors will undergo basic quality assurance and sanitization in our collection units and only then be distributed to the donees. 
+To make our mobile app fully accessible, we have included a IBM Watson virtual assistant who will answer all queries related to COVID that a user might have and also help distributors in navigation.
